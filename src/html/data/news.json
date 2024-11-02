@@ -1,0 +1,20 @@
+[
+	{
+		"link": "/news-1.html",
+		"image": "/assets/img/news/1.jpg",
+		"pagetitle": "Социальный проект: можем, хотим и делаем",
+		"date": "только что"
+	},
+	{
+		"link": "/news-2.html",
+		"image": "/assets/img/news/2.jpg",
+		"pagetitle": "Нити Груздева: минимум травматизации, максимум эффекта",
+		"date": "2 дня назад"
+	},
+	{
+		"link": "/news-3.html",
+		"image": "/assets/img/news/3.jpg",
+		"pagetitle": "Осень — идеальное время фотоомоложения!",
+		"date": "неделю назад"
+	}
+]

@@ -1,0 +1,159 @@
+@charset "UTF-8";
+
+.sidebar-wrapper {
+    border-right: 1px solid #989b7b;
+    position: sticky;
+    top: 120px;
+    padding: 2vmax 0;
+}
+
+.service-navi li a {
+    display: block;
+    padding: clamp(8px, 0.65vw, 16px) 20px;
+    position: relative;
+    color: #333;
+}
+
+.service-navi li a:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-image: url(/assets/img/pattern.svg);
+    transition: opacity 0.2s;
+    opacity: 0;
+}
+
+.service-navi li a:hover:before {
+    opacity: 0.3;
+}
+
+.service-navi li:not(:last-of-type) a {
+    border-bottom: 1px solid #989b7b;
+}
+
+.price-wrapper .header-cell {
+    grid-column: 1 / 4;
+    background-color: #fffdf5;
+    padding: 24px 0 12px;
+}
+
+.price-wrapper .header-cell.subheader {
+    border-bottom: 1px solid #333;
+}
+
+.price-wrapper .header-cell:not(.subheader) {
+    position: sticky;
+    top: 100px;
+    z-index: 2;
+}
+
+.price-wrapper .price-entry {
+    display: grid;
+    grid-template-columns: 160px 1fr 200px;
+    position: relative;
+}
+
+@media (max-width: 850px) {
+    .price-wrapper .price-entry {
+        grid-template-columns: 140px 1fr 120px;
+    }
+}
+
+.price-wrapper .price-entry:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(/assets/img/pattern.svg);
+    position: absolute;
+    opacity: 0;
+}
+
+.price-wrapper .price-entry:hover:before {
+    opacity: 0.3;
+}
+
+.price-wrapper .price-entry .code,
+  .price-wrapper .price-entry .name,
+  .price-wrapper .price-entry .price {
+    padding: clamp(2px, 3vw, 12px) 0;
+    display: flex;
+    align-items: center;
+}
+
+.price-wrapper .price-entry .tag {
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 14px;
+    line-height: 20px;
+    display: inline-block;
+    padding: 0 6px;
+    border-radius: 18px;
+    background-color: #989b7b;
+    color: #fffdf5;
+}
+
+@media (min-width: 600px) {
+    .price-wrapper .price-entry:nth-child(odd) {
+        background-color: rgba(240, 236, 216, 0.5);
+    }
+}
+
+@media (max-width: 600px) {
+    .price-wrapper .price-entry {
+        display: block;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        background-color: #fff;
+    }
+
+    .price-wrapper .price-entry .code,
+      .price-wrapper .price-entry .name,
+      .price-wrapper .price-entry .price {
+        padding: clamp(2px, 3vw, 12px);
+    }
+
+    .price-wrapper .price-entry .code:before {
+        content: "Код/обозначение";
+        font-size: 12px;
+        color: #a1a1a1;
+        display: block;
+        margin-bottom: 4px;
+    }
+
+    .price-wrapper .price-entry .name:before {
+        content: "Наименование услуги";
+        font-size: 12px;
+        color: #a1a1a1;
+        display: block;
+        margin-bottom: 4px;
+    }
+
+    .price-wrapper .price-entry .price:before {
+        content: "Стоимость";
+        font-size: 12px;
+        color: #a1a1a1;
+        display: block;
+        margin-bottom: 4px;
+    }
+}
+
+.price-wrapper h2 {
+    font-size: clamp(21px, 3vw, 26px);
+    letter-spacing: 0;
+    font-weight: bold;
+    margin: 0;
+}
+
+.price-wrapper h2:before {
+    display: none;
+}
+
+.price-wrapper h3 {
+    font-size: clamp(18px, 3vw, 21px);
+    margin: 0;
+}

@@ -1,0 +1,18 @@
+@import "../parts/vars";
+
+main#news {
+	& .news-side-entry {
+		display: block;
+		margin-bottom: 45px;
+		color: $text;
+
+		& img {
+			display: block;
+			margin-bottom: 12px;
+		}
+
+		& small {
+			color: $accent;
+		}
+	}
+}

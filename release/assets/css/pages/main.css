@@ -1,0 +1,438 @@
+main#main section#hero {
+    position: relative;
+}
+
+main#main section#hero .text-wrapper {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+main#main section#hero h1 {
+    margin-bottom: 0;
+}
+
+main#main section#hero p {
+    margin-bottom: 40px;
+}
+
+main#main section#welcome .img-wrapper {
+    position: relative;
+}
+
+main#main section#welcome .img-wrapper:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    right: -20px;
+    top: -20px;
+    background-image: url(/assets/img/pattern.svg);
+    z-index: -1;
+}
+
+main#main section#welcome .img-wrapper img {
+    display: block;
+}
+
+main#main section#services {
+    position: relative;
+}
+
+main#main section#services .swiper-navi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main#main section#services .swiper-navi nav {
+    display: flex;
+    align-items: center;
+}
+
+main#main section#services .swiper-navi nav .next, main#main section#services .swiper-navi nav .prev {
+    box-shadow: 0 0 0 2px #333 inset;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 20px;
+    transition: background-color 0.3s;
+}
+
+main#main section#services .swiper-navi nav .next:hover, main#main section#services .swiper-navi nav .prev:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+main#main section#services:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    background-color: #f0ecd8;
+    z-index: -1;
+}
+
+main#main section#services:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: calc(50% - 80px);
+    height: 40px;
+    background-image: url(/assets/img/pattern.svg);
+    z-index: -1;
+}
+
+main#main section#services h2 {
+    margin-bottom: 0;
+}
+
+main#main section#services h2 ~ p {
+    margin-bottom: 40px;
+}
+
+main#main section#services .swiper {
+    aspect-ratio: 1.9 / 1;
+    padding: 0 14px;
+    width: calc(100% + 28px);
+    margin-left: -14px;
+}
+
+main#main section#services .swiper-wrapper {
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+main#main section#services .swiper-slide .service-card {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 12;
+    transform-style: preserve-3d;
+    perspective: 1200px;
+}
+
+main#main section#services .swiper-slide .service-card .front, main#main section#services .swiper-slide .service-card .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: transform 0.4s;
+    background: #fff;
+    box-shadow: 0 0 0 1px #989b7b inset;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+main#main section#services .swiper-slide .service-card .front:before, main#main section#services .swiper-slide .service-card .back:before {
+    content: "";
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff 80%);
+}
+
+main#main section#services .swiper-slide .service-card .front img, main#main section#services .swiper-slide .service-card .back img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+main#main section#services .swiper-slide .service-card .front h3, main#main section#services .swiper-slide .service-card .back h3 {
+    margin: 0;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+main#main section#services .swiper-slide .service-card .back {
+    transform: rotatey(180deg) translateZ(0);
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main#main section#services .swiper-slide .service-card .back:before {
+    display: none;
+}
+
+main#main section#services .swiper-slide .service-card .back .back-info {
+    border-left: 4px solid #989b7b;
+    margin-left: -20px;
+    padding-left: 20px;
+    padding-top: 6px;
+}
+
+main#main section#services .swiper-slide .service-card .back .back-h3 {
+    font-size: clamp(18px, 2vw, 24px);
+    font-weight: 400;
+}
+
+main#main section#services .swiper-slide .service-card .back p {
+    flex-grow: 1;
+    margin-top: 6px;
+    font-size: 14px;
+    line-height: 1.4em;
+}
+
+main#main section#services .swiper-slide .service-card .back .actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+main#main section#services .swiper-slide .service-card .back .actions .min-price {
+    font-size: 24px;
+}
+
+main#main section#services .swiper-slide .service-card .back .actions .arrow {
+    box-shadow: 0 0 0 1px rgba(152, 155, 123, 0.3);
+    border-radius: 50%;
+    transition: background-color 0.2s;
+}
+
+main#main section#services .swiper-slide .service-card .back .actions .arrow img {
+    display: block;
+    width: 40px;
+}
+
+main#main section#services .swiper-slide .service-card .back .actions .arrow:hover {
+    background-color: rgba(152, 155, 123, 0.3);
+}
+
+main#main section#services .swiper-slide .service-card:hover .front, main#main section#services .swiper-slide .service-card:hover .back {
+    transform: rotatey(180deg) translateZ(0);
+}
+
+main#main section#services .swiper-slide .service-card:hover .back {
+    transform: rotatey(360deg) translateZ(0);
+}
+
+main#main section#services .mobile-cards-wrapper {
+    margin-top: 60px;
+}
+
+main#main section#services .service-card-mobile {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+}
+
+main#main section#services .service-card-mobile .back-info {
+    border-left: 4px solid #989b7b;
+    margin-left: -20px;
+    padding-left: 20px;
+    padding-top: 6px;
+}
+
+main#main section#services .service-card-mobile .back-h3 {
+    font-size: clamp(18px, 2vw, 24px);
+    font-weight: 400;
+}
+
+main#main section#services .service-card-mobile p {
+    flex-grow: 1;
+    margin-top: 6px;
+    font-size: 14px;
+    line-height: 1.4em;
+}
+
+main#main section#services .service-card-mobile .actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+main#main section#services .service-card-mobile .actions .min-price {
+    font-size: 24px;
+}
+
+main#main section#services .service-card-mobile .actions .arrow {
+    box-shadow: 0 0 0 1px rgba(152, 155, 123, 0.3);
+    border-radius: 50%;
+    transition: background-color 0.2s;
+}
+
+main#main section#services .service-card-mobile .actions .arrow img {
+    display: block;
+    width: 40px;
+}
+
+main#main section#services .service-card-mobile .actions .arrow:hover {
+    background-color: rgba(152, 155, 123, 0.3);
+}
+
+main#main section#possibilities .img-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (min-width: 850px) {
+    main#main section#possibilities .img-wrapper:after {
+        content: "";
+        display: block;
+        width: 60px;
+        aspect-ratio: 1 / 1;
+        background-color: #989b7b;
+    }
+}
+
+main#main section#parallax .parallax-content {
+    padding: clamp(10px, 2vw, 30px);
+    text-align: center;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.7);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+main#main section#parallax .parallax-content h2 {
+    margin-top: 0;
+}
+
+main#main section#brands .brands-wrapper {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1350px) {
+    main#main section#brands .brands-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    main#main section#brands .brands-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+main#main section#brands .brands-wrapper .brand {
+    box-shadow: 0 0 0 1px #efefef;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 16 / 8;
+    position: relative;
+    background-color: #fffdf5;
+}
+
+main#main section#brands .brands-wrapper .brand:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/assets/img/pattern.svg);
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+main#main section#brands .brands-wrapper .brand:hover:before {
+    opacity: 0.4;
+}
+
+main#main section#brands .brands-wrapper .brand img {
+    max-width: 40%;
+    position: relative;
+    z-index: 2;
+}
+
+main#main section#brands .brands-wrapper .brand .anchor {
+    position: absolute;
+    width: 12px;
+    aspect-ratio: 1 / 1;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background-color: #efefef;
+}
+
+main#main section#brands .brands-wrapper .brand .anchor.tl {
+    top: 0;
+    left: 0;
+}
+
+main#main section#brands .brands-wrapper .brand .anchor.tr {
+    top: 0;
+    left: 100%;
+}
+
+main#main section#brands .brands-wrapper .brand .anchor.bl {
+    top: 100%;
+    left: 0;
+}
+
+main#main section#brands .brands-wrapper .brand .anchor.br {
+    top: 100%;
+    left: 100%;
+}
+
+main#main section#news:before {
+    content: "";
+    display: block;
+    height: 500px;
+    margin-bottom: -300px;
+    background-color: #f0ecd8;
+}
+
+main#main section#news h2 {
+    margin: 0;
+}
+
+main#main section#news .news-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+main#main section#news .news-header a {
+    border: 1px solid #333;
+    display: inline-block;
+    font-size: 24px;
+    color: #333;
+    border-radius: 50%;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    aspect-ratio: 1 / 1;
+}
+
+main#main section#news article {
+    margin-bottom: 20px;
+}
+
+main#main section#news article big {
+    display: block;
+    margin: 10px 0;
+    color: #333;
+}
+
+main#main section#news article small {
+    color: #a1a1a1;
+}
+
+main#main section#news article img {
+    transition: box-shadow 0.2s;
+}
+
+main#main section#news article:hover img {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}

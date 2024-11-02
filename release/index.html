@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>КС Клиник - главная</title>
+	<link href="https://api.mapbox.com/mapbox-gl-js/v3.7.0/mapbox-gl.css" rel="stylesheet" />
+	<link rel="stylesheet" href="/assets/css/master.css" />
+
+	<link rel="stylesheet" href="/assets/css/pages/main.css" />
+
+
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="row flex vcenter">
+				<div class="col l2 m4 s4 xs5 t4">
+					<div class="logo-wrapper">
+						<a href="#mobile-nav" class="sidenav-trigger hide-l-up">
+							<i class="bx bx-menu"></i>
+						</a>
+						<a href="/">
+							<img src="/assets/img/logo-black.svg" alt="На главную" class="responsive-img logo-desktop hide-xs-down" />
+							<img src="/assets/img/logo-black-compact.svg" alt="На главную" class="responsive-img logo-mobile hide-xs-up" />
+						</a>
+					</div>
+				</div>
+				<div class="col xl6 offset-xl1 l6 hide-l-down">
+					<nav>
+						<ul>
+							<li><a href="/about.html">О клинике</a></li>
+							<li>
+								<a>Услуги</a>
+								<ul>
+									<li>
+										<a href="/piling.html"> Пилинг для лица </a>
+									</li>
+									<li>
+										<a href="/smas.html"> SMAS-лифтинг </a>
+									</li>
+									<li>
+										<a href="/rf.html"> RF-лифтинг </a>
+									</li>
+									<li>
+										<a href="/vessel-removal.html"> Удаление сосудов </a>
+									</li>
+									<li>
+										<a href="/liposaction.html"> Лазерная липосакция </a>
+									</li>
+									<li>
+										<a href="/epilation.html"> Лазерная эпиляция </a>
+									</li>
+									<li>
+										<a href="/scars-healing.html"> Лечение рубцов </a>
+									</li>
+									<li>
+										<a href="/injections.html"> Инъекции ботулотоксина </a>
+									</li>
+									<li>
+										<a href="/contour-plastic.html"> Контурная пластика </a>
+									</li>
+									<li>
+										<a href="/lips-enlargement.html"> Увеличение губ </a>
+									</li>
+									<li>
+										<a href="/threading.html"> Нитевой лифтинг </a>
+									</li>
+									<li>
+										<a href="/beauty-drips.html"> Капельницы красоты </a>
+									</li>
+
+								</ul>
+							</li>
+							<li><a href="/news.html">Новости</a></li>
+							<li><a href="/price.html">Цены</a></li>
+							<li><a href="/contacts.html">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col xl3 l4 m8 s8 xs7 t8">
+					<aside>
+						<a href="https://wa.me/+79615353510" class="bttn-outline" target="_blank">
+							Записаться<span class="mobile-hide"> на приём</span>
+						</a>
+						<a href="tel:79184313050" class="phone">
+							<i class="bx bxs-phone bx-flip-horizontal"></i>
+						</a>
+					</aside>
+				</div>
+			</div>
+		</div>
+	</header>
+	<nav class="sidenav" id="mobile-nav">
+		<ul>
+			<li><a href="/">Главная</a></li>
+			<li><a href="/about.html">О клинике</a></li>
+			<li>
+				<a>Услуги</a>
+				<ul>
+					<li>
+						<a href="/piling.html"> Пилинг для лица </a>
+					</li>
+					<li>
+						<a href="/smas.html"> SMAS-лифтинг </a>
+					</li>
+					<li>
+						<a href="/rf.html"> RF-лифтинг </a>
+					</li>
+					<li>
+						<a href="/vessel-removal.html"> Удаление сосудов </a>
+					</li>
+					<li>
+						<a href="/liposaction.html"> Лазерная липосакция </a>
+					</li>
+					<li>
+						<a href="/epilation.html"> Лазерная эпиляция </a>
+					</li>
+					<li>
+						<a href="/scars-healing.html"> Лечение рубцов </a>
+					</li>
+					<li>
+						<a href="/injections.html"> Инъекции ботулотоксина </a>
+					</li>
+					<li>
+						<a href="/contour-plastic.html"> Контурная пластика </a>
+					</li>
+					<li>
+						<a href="/lips-enlargement.html"> Увеличение губ </a>
+					</li>
+					<li>
+						<a href="/threading.html"> Нитевой лифтинг </a>
+					</li>
+					<li>
+						<a href="/beauty-drips.html"> Капельницы красоты </a>
+					</li>
+
+				</ul>
+			</li>
+			<li><a href="/news.html">Новости</a></li>
+			<li><a href="/price.html">Цены</a></li>
+			<li><a href="/contacts.html">Контакты</a></li>
+		</ul>
+	</nav>
+
+	<main id="main">
+		<section id="hero">
+			<div class="swiper" id="main-swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img data-src="/assets/img/slides/slide1.jpg" alt="Слайд 1" class="lazy responsive-img" />
+					</div>
+					<div class="swiper-slide">
+						<img data-src="/assets/img/slides/slide2.jpg" alt="Слайд 2" class="lazy responsive-img" />
+					</div>
+					<div class="swiper-slide">
+						<img data-src="/assets/img/slides/slide3.jpg" alt="Слайд 3" class="lazy responsive-img" />
+					</div>
+					<div id="hero-progress"></div>
+				</div>
+			</div>
+			<div class="text-wrapper">
+				<div class="container">
+					<div class="row">
+						<div class="col l4 m6 s8 xs12">
+							<h1>
+								<strong>Красота</strong>
+								<span>с медицинским подходом</span>
+							</h1>
+							<p>
+								Эстетика и здоровье — обязательные составляющие вновь обретённой молодости.
+								Совмещаем компоненты по-науке и исключительно медицинскими сертифицированными
+								методами.
+							</p>
+							<a href="/about.html" class="bttn-white">О клинике</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="welcome">
+			<div class="container">
+				<div class="row flex">
+					<div class="col xl8 l7 m6 s12 order-m1">
+						<h2><strong>Добро пожаловать</strong></h2>
+						<p>
+							«КС Клиник» — это современная косметологическая клиника, где эстетика неразрывно связана
+							с технологическим совершенством. Мы верим, что вернуть молодость помогают исключительно
+							врачебные практики, научные знания и лучшие аппараты. Надёжные и самые эффективные
+							решения — сертифицированные и безопасные: мы за тот результат, что гарантирован как
+							исследованиями, так мировым и личным опытом.
+						</p>
+					</div>
+					<div class="col xl3 offset-xl1 l4 offset-l1 m5 offset-m1 s12">
+						<div class="img-wrapper">
+							<img data-src="/assets/img/welcome.jpg" alt="Добро пожаловать" class="lazy responsive-img" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="services">
+			<div class="container">
+				<div class="row flex vbottom">
+					<div class="col s12">
+						<div class="swiper-navi hide-l-down">
+							<nav>
+								<a href="" class="prev">
+									<img src="/assets/img/slider-prev.svg" alt="" />
+								</a>
+								<a href="" class="next">
+									<img src="/assets/img/slider-next.svg" alt="" />
+								</a>
+							</nav>
+							<div id="service-pagination"></div>
+						</div>
+					</div>
+					<div class="col xl3 l12">
+						<h2>
+							<strong>Наши услуги</strong>
+							<span>помогут вам сиять</span>
+						</h2>
+						<p>
+							Как косметологическая клиника, мы предлагаем пациентам современные, но уже проверенные
+							практики и процедуры. Но будьте внимательны: перед назначением необходима врачебная
+							консультация!
+						</p>
+						<a href="/services.html" class="bttn-white">Смотреть все</a>
+					</div>
+					<div class="col xl8 offset-xl1 l12 hide-l-down">
+						<div class="swiper" id="service-slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="service-card">
+										<div class="front">
+											<img data-src="/assets/img/service-images/piling.jpg" alt="Пилинг для лица" class="lazy responsive-img" />
+											<h3>Пилинг для лица</h3>
+										</div>
+										<div class="back">
+											<div class="back-info">
+												<div class="back-h3">Пилинг для лица</div>
+												<p>Уда­лим слои пов­реж­дён­ного или от­мер­шего эпи­дер­миса с по­мощью бе­зо­пас­ных кис­лот, за­пус­кая ес­тест­вен­ные про­цес­сы омо­ло­же­ния.</p>
+											</div>
+											<div class="actions">
+												<div class="min-price">от 5 000₽</div>
+												<a href="/piling.html" class="arrow">
+													<img src="/assets/img/card-arrow.svg" alt="" />
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="service-card">
+										<div class="front">
+											<img data-src="/assets/img/service-images/smas.jpg" alt="SMAS-лифтинг" class="lazy responsive-img" />
+											<h3>SMAS-лифтинг</h3>
+										</div>
+										<div class="back">
+											<div class="back-info">
+												<div class="back-h3">SMAS-лифтинг</div>
+												<p>Вос­ста­но­вим то­нус и све­жесть ко­жи, сти­му­ли­ру­ем вы­ра­бот­ку ес­тес­твен­ного кол­ла­гена с по­мощью уль­тра­зву­ко­вых волн тех­но­ло­гич­ного ап­па­рата.</p>
+											</div>
+											<div class="actions">
+												<div class="min-price">от 5 000₽</div>
+												<a href="/smas.html" class="arrow">
+													<img src="/assets/img/card-arrow.svg" alt="" />
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="service-card">
+										<div class="front">
+											<img data-src="/assets/img/service-images/rf.jpg" alt="RF-лифтинг" class="lazy responsive-img" />
+											<h3>RF-лифтинг</h3>
+										</div>
+										<div class="back">
+											<div class="back-info">
+												<div class="back-h3">RF-лифтинг</div>
+												<p>Вос­ста­но­вим уп­ру­гость ко­жи и вер­нём ей то­нус с по­мощью ра­дио­волн тех­но­ло­гич­ного сов­ре­мен­ного ап­па­рата. Бо­нус: уда­лим из­ли­шек себ­ума.</p>
+											</div>
+											<div class="actions">
+												<div class="min-price">от 5 000₽</div>
+												<a href="/rf.html" class="arrow">
+													<img src="/assets/img/card-arrow.svg" alt="" />
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="service-card">
+										<div class="front">
+											<img data-src="/assets/img/service-images/vessel-removal.jpg" alt="Удаление сосудов" class="lazy responsive-img" />
+											<h3>Удаление сосудов</h3>
+										</div>
+										<div class="back">
+											<div class="back-info">
+												<div class="back-h3">Удаление сосудов</div>
+												<p>Уда­лим со­су­дис­тые ри­сун­ки и пят­на с по­мощью про­це­дуры Ко­агу­ля­ции. Вмес­те с вра­чом вы най­дё­те наи­бо­лее под­хо­дя­щий вам спо­соб: ла­зер, ра­дио­вол­ны, скле­ро­те­ра­пия.</p>
+											</div>
+											<div class="actions">
+												<div class="min-price">от 5 000₽</div>
+												<a href="/vessel-removal.html" class="arrow">
+													<img src="/assets/img/card-arrow.svg" alt="" />
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="service-card">
+										<div class="front">
+											<img data-src="/assets/img/service-images/liposaction.jpg" alt="Лазерная липосакция" class="lazy responsive-img" />
+											<h3>Лазерная липосакция</h3>
+										</div>
+										<div class="back">
+											<div class="back-info">
+												<div class="back-h3">Лазерная липосакция</div>
+												<p>По­мо­жем об­рес­ти строй­ную фи­гу­ру без спорт­за­ла, диет и опе­ра­ций с по­мощью ма­ло­ин­ва­зив­ной про­це­дуры уда­ле­ния жи­ро­вых от­ло­же­ний на ла­зер­ном ап­па­рате.</p>
+											</div>
+											<div class="actions">
+												<div class="min-price">от 5 000₽</div>
+												<a href="/liposaction.html" class="arrow">
+													<img src="/assets/img/card-arrow.svg" alt="" />
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="service-card">
+										<div class="front">
+											<img data-src="/assets/img/service-images/epilation.jpg" alt="Лазерная эпиляция" class="lazy responsive-img" />
+											<h3>Лазерная эпиляция</h3>
+										</div>
+										<div class="back">
+											<div class="back-info">
+												<div class="back-h3">Лазерная эпиляция</div>
+												<p>Из­ба­вим от по­ре­зов от стан­ка и страш­ных вос­ко­вых по­ло­сок се­ан­сом ла­зе­рной эпи­ля­ции — уда­ле­ни­ем во­лос им­пуль­сами из­лу­че­ния.</p>
+											</div>
+											<div class="actions">
+												<div class="min-price">от 5 000₽</div>
+												<a href="/epilation.html" class="arrow">
+													<img src="/assets/img/card-arrow.svg" alt="" />
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="service-card">
+										<div class="front">
+											<img data-src="/assets/img/service-images/scars-healing.jpg" alt="Лечение рубцов" class="lazy responsive-img" />
+											<h3>Лечение рубцов</h3>
+										</div>
+										<div class="back">
+											<div class="back-info">
+												<div class="back-h3">Лечение рубцов</div>
+												<p>Про­ве­дём комп­лекс про­це­дур кор­рек­ции, что­бы ак­ку­рат­но из­ба­вить от шра­мов, руб­цов и иных травм-де­фек­тов как ме­ха­ни­чес­ко­го, так и ме­ди­цин­ско­го ха­рак­те­ра.</p>
+											</div>
+											<div class="actions">
+												<div class="min-price">от 5 000₽</div>
+												<a href="/scars-healing.html" class="arrow">
+													<img src="/assets/img/card-arrow.svg" alt="" />
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="service-card">
+										<div class="front">
+											<img data-src="/assets/img/service-images/injections.jpg" alt="Инъекции ботулотоксина" class="lazy responsive-img" />
+											<h3>Инъекции ботулотоксина</h3>
+										</div>
+										<div class="back">
+											<div class="back-info">
+												<div class="back-h3">Инъекции ботулотоксина</div>
+												<p>Скор­рек­ти­ру­ем воз­раст­ные из­ме­не­ния и ус­тра­ним асим­мет­рию ли­ца юве­лир­ным вве­де­нием бел­ка бо­ту­ло­ток­сина.</p>
+											</div>
+											<div class="actions">
+												<div class="min-price">от 5 000₽</div>
+												<a href="/injections.html" class="arrow">
+													<img src="/assets/img/card-arrow.svg" alt="" />
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="service-card">
+										<div class="front">
+											<img data-src="/assets/img/service-images/contour-plastic.jpg" alt="Контурная пластика" class="lazy responsive-img" />
+											<h3>Контурная пластика</h3>
+										</div>
+										<div class="back">
+											<div class="back-info">
+												<div class="back-h3">Контурная пластика</div>
+												<p>Вос­ста­но­вим эс­те­тич­ную сим­мет­рию и ус­тра­ним де­фек­ты кон­ту­ров с по­мощью ма­ло­ин­ва­зив­ной про­це­дуры инъек­ции ги­алу­ро­но­вой кис­лоты.</p>
+											</div>
+											<div class="actions">
+												<div class="min-price">от 5 000₽</div>
+												<a href="/contour-plastic.html" class="arrow">
+													<img src="/assets/img/card-arrow.svg" alt="" />
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="service-card">
+										<div class="front">
+											<img data-src="/assets/img/service-images/lips-enlargement.jpg" alt="Увеличение губ" class="lazy responsive-img" />
+											<h3>Увеличение губ</h3>
+										</div>
+										<div class="back">
+											<div class="back-info">
+												<div class="back-h3">Увеличение губ</div>
+												<p>Бе­зо­пас­ным ин­ъек­ци­он­ным ме­то­дом вос­становим фор­му и до­пол­ним объём пре­па­ра­том на ос­но­ве ги­алу­ро­но­вой кис­ло­ты.</p>
+											</div>
+											<div class="actions">
+												<div class="min-price">от 5 000₽</div>
+												<a href="/lips-enlargement.html" class="arrow">
+													<img src="/assets/img/card-arrow.svg" alt="" />
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="service-card">
+										<div class="front">
+											<img data-src="/assets/img/service-images/lifting.jpg" alt="Нитевой лифтинг" class="lazy responsive-img" />
+											<h3>Нитевой лифтинг</h3>
+										</div>
+										<div class="back">
+											<div class="back-info">
+												<div class="back-h3">Нитевой лифтинг</div>
+												<p>Под­тя­нем кон­ту­ры и за­пус­тим про­цес­сы ре­ге­не­ра­ции с по­мощью ма­ло­ин­ва­зив­ной про­це­ду­ры вве­де­ния са­мо­рас­са­сы­ва­ющ­их­ся ни­тей.</p>
+											</div>
+											<div class="actions">
+												<div class="min-price">от 5 000₽</div>
+												<a href="/threading.html" class="arrow">
+													<img src="/assets/img/card-arrow.svg" alt="" />
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="service-card">
+										<div class="front">
+											<img data-src="/assets/img/service-images/beauty-drips.jpg" alt="Капельницы красоты" class="lazy responsive-img" />
+											<h3>Капельницы красоты</h3>
+										</div>
+										<div class="back">
+											<div class="back-info">
+												<div class="back-h3">Капельницы красоты</div>
+												<p>Де­ли­кат­ный де­токс и омо­ло­же­ние с по­мощью ка­пель­ниц с по­лез­ней­шими кок­тей­ля­ми из ви­та­ми­нов, кис­лот и мик­ро­эле­мен­тов.</p>
+											</div>
+											<div class="actions">
+												<div class="min-price">от 5 000₽</div>
+												<a href="/beauty-drips.html" class="arrow">
+													<img src="/assets/img/card-arrow.svg" alt="" />
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row mobile-cards-wrapper">
+					<div class="col s12 hide-l-up">
+						<div class="row">
+							<div class="col m6 xs12">
+								<div class="service-card-mobile">
+									<div class="back-info">
+										<div class="back-h3">Пилинг для лица</div>
+										<p>Уда­лим слои пов­реж­дён­ного или от­мер­шего эпи­дер­миса с по­мощью бе­зо­пас­ных кис­лот, за­пус­кая ес­тест­вен­ные про­цес­сы омо­ло­же­ния.</p>
+									</div>
+									<div class="actions">
+										<div class="min-price">от 5 000₽</div>
+										<a href="/piling.html" class="arrow">
+											<img src="/assets/img/card-arrow.svg" alt="" />
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col m6 xs12">
+								<div class="service-card-mobile">
+									<div class="back-info">
+										<div class="back-h3">SMAS-лифтинг</div>
+										<p>Вос­ста­но­вим то­нус и све­жесть ко­жи, сти­му­ли­ру­ем вы­ра­бот­ку ес­тес­твен­ного кол­ла­гена с по­мощью уль­тра­зву­ко­вых волн тех­но­ло­гич­ного ап­па­рата.</p>
+									</div>
+									<div class="actions">
+										<div class="min-price">от 5 000₽</div>
+										<a href="/smas.html" class="arrow">
+											<img src="/assets/img/card-arrow.svg" alt="" />
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col m6 xs12">
+								<div class="service-card-mobile">
+									<div class="back-info">
+										<div class="back-h3">RF-лифтинг</div>
+										<p>Вос­ста­но­вим уп­ру­гость ко­жи и вер­нём ей то­нус с по­мощью ра­дио­волн тех­но­ло­гич­ного сов­ре­мен­ного ап­па­рата. Бо­нус: уда­лим из­ли­шек себ­ума.</p>
+									</div>
+									<div class="actions">
+										<div class="min-price">от 5 000₽</div>
+										<a href="/rf.html" class="arrow">
+											<img src="/assets/img/card-arrow.svg" alt="" />
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col m6 xs12">
+								<div class="service-card-mobile">
+									<div class="back-info">
+										<div class="back-h3">Удаление сосудов</div>
+										<p>Уда­лим со­су­дис­тые ри­сун­ки и пят­на с по­мощью про­це­дуры Ко­агу­ля­ции. Вмес­те с вра­чом вы най­дё­те наи­бо­лее под­хо­дя­щий вам спо­соб: ла­зер, ра­дио­вол­ны, скле­ро­те­ра­пия.</p>
+									</div>
+									<div class="actions">
+										<div class="min-price">от 5 000₽</div>
+										<a href="/vessel-removal.html" class="arrow">
+											<img src="/assets/img/card-arrow.svg" alt="" />
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col m6 xs12">
+								<div class="service-card-mobile">
+									<div class="back-info">
+										<div class="back-h3">Лазерная липосакция</div>
+										<p>По­мо­жем об­рес­ти строй­ную фи­гу­ру без спорт­за­ла, диет и опе­ра­ций с по­мощью ма­ло­ин­ва­зив­ной про­це­дуры уда­ле­ния жи­ро­вых от­ло­же­ний на ла­зер­ном ап­па­рате.</p>
+									</div>
+									<div class="actions">
+										<div class="min-price">от 5 000₽</div>
+										<a href="/liposaction.html" class="arrow">
+											<img src="/assets/img/card-arrow.svg" alt="" />
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col m6 xs12">
+								<div class="service-card-mobile">
+									<div class="back-info">
+										<div class="back-h3">Лазерная эпиляция</div>
+										<p>Из­ба­вим от по­ре­зов от стан­ка и страш­ных вос­ко­вых по­ло­сок се­ан­сом ла­зе­рной эпи­ля­ции — уда­ле­ни­ем во­лос им­пуль­сами из­лу­че­ния.</p>
+									</div>
+									<div class="actions">
+										<div class="min-price">от 5 000₽</div>
+										<a href="/epilation.html" class="arrow">
+											<img src="/assets/img/card-arrow.svg" alt="" />
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col m6 xs12">
+								<div class="service-card-mobile">
+									<div class="back-info">
+										<div class="back-h3">Лечение рубцов</div>
+										<p>Про­ве­дём комп­лекс про­це­дур кор­рек­ции, что­бы ак­ку­рат­но из­ба­вить от шра­мов, руб­цов и иных травм-де­фек­тов как ме­ха­ни­чес­ко­го, так и ме­ди­цин­ско­го ха­рак­те­ра.</p>
+									</div>
+									<div class="actions">
+										<div class="min-price">от 5 000₽</div>
+										<a href="/scars-healing.html" class="arrow">
+											<img src="/assets/img/card-arrow.svg" alt="" />
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col m6 xs12">
+								<div class="service-card-mobile">
+									<div class="back-info">
+										<div class="back-h3">Инъекции ботулотоксина</div>
+										<p>Скор­рек­ти­ру­ем воз­раст­ные из­ме­не­ния и ус­тра­ним асим­мет­рию ли­ца юве­лир­ным вве­де­нием бел­ка бо­ту­ло­ток­сина.</p>
+									</div>
+									<div class="actions">
+										<div class="min-price">от 5 000₽</div>
+										<a href="/injections.html" class="arrow">
+											<img src="/assets/img/card-arrow.svg" alt="" />
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col m6 xs12">
+								<div class="service-card-mobile">
+									<div class="back-info">
+										<div class="back-h3">Контурная пластика</div>
+										<p>Вос­ста­но­вим эс­те­тич­ную сим­мет­рию и ус­тра­ним де­фек­ты кон­ту­ров с по­мощью ма­ло­ин­ва­зив­ной про­це­дуры инъек­ции ги­алу­ро­но­вой кис­лоты.</p>
+									</div>
+									<div class="actions">
+										<div class="min-price">от 5 000₽</div>
+										<a href="/contour-plastic.html" class="arrow">
+											<img src="/assets/img/card-arrow.svg" alt="" />
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col m6 xs12">
+								<div class="service-card-mobile">
+									<div class="back-info">
+										<div class="back-h3">Увеличение губ</div>
+										<p>Бе­зо­пас­ным ин­ъек­ци­он­ным ме­то­дом вос­становим фор­му и до­пол­ним объём пре­па­ра­том на ос­но­ве ги­алу­ро­но­вой кис­ло­ты.</p>
+									</div>
+									<div class="actions">
+										<div class="min-price">от 5 000₽</div>
+										<a href="/lips-enlargement.html" class="arrow">
+											<img src="/assets/img/card-arrow.svg" alt="" />
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col m6 xs12">
+								<div class="service-card-mobile">
+									<div class="back-info">
+										<div class="back-h3">Нитевой лифтинг</div>
+										<p>Под­тя­нем кон­ту­ры и за­пус­тим про­цес­сы ре­ге­не­ра­ции с по­мощью ма­ло­ин­ва­зив­ной про­це­ду­ры вве­де­ния са­мо­рас­са­сы­ва­ющ­их­ся ни­тей.</p>
+									</div>
+									<div class="actions">
+										<div class="min-price">от 5 000₽</div>
+										<a href="/threading.html" class="arrow">
+											<img src="/assets/img/card-arrow.svg" alt="" />
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col m6 xs12">
+								<div class="service-card-mobile">
+									<div class="back-info">
+										<div class="back-h3">Капельницы красоты</div>
+										<p>Де­ли­кат­ный де­токс и омо­ло­же­ние с по­мощью ка­пель­ниц с по­лез­ней­шими кок­тей­ля­ми из ви­та­ми­нов, кис­лот и мик­ро­эле­мен­тов.</p>
+									</div>
+									<div class="actions">
+										<div class="min-price">от 5 000₽</div>
+										<a href="/beauty-drips.html" class="arrow">
+											<img src="/assets/img/card-arrow.svg" alt="" />
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="possibilities">
+			<div class="container">
+				<div class="row flex">
+					<div class="col xl2 offset-xl1 l3 m4 s12">
+						<div class="img-wrapper">
+							<img data-src="/assets/img/ks-square.svg" alt="КС клиник" class="lazy responsive-img" />
+						</div>
+					</div>
+					<div class="col xl7 offset-xl1 l8 offset-l1 m8 s12">
+						<h2>
+							<strong>Технологии</strong>
+							<span>для совершенства</span>
+						</h2>
+						<p>
+							Результат эстетической косметологии — результат работы как квалифицированных врачей, так
+							и надёжной, современной техники. Мы лично и очень тщательно отбираем только лучшие
+							аппараты, но также опираемся на опыт их использования и отзывы наших коллег по сфере.
+						</p>
+						<p>
+							Чувствуя себя причастными к большой семье бьюти-мастеров, мы, пока в пилотном режиме,
+							тестируем сервис дистрибуции косметологических аппаратов напрямую от
+							заводов-производителей. Так мы надеемся существенно поднять общий уровень косметологии в
+							России, а вместе с тем стимулировать развитие производственной сферы в стране — так,
+							чтобы вновь почувствовать себя самыми-самыми могли как можно больше женщин. И мужчин,
+							конечно.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- <section id="parallax" class="lazy" data-bg="/assets/img/parallax.jpg">
+				<div class="container">
+					<div class="row">
+						<div class="col xl offset-xl2 xl8 l10 offset-l1 m12">
+							<div class="parallax-content">
+								<h2>
+									<strong>Совершенствуйтесь!</strong>
+								</h2>
+								<p>
+									Подробный каталог косметологических аппаратов, которыми мы пользуемся сами и в
+									качестве которых мы уверены на все 100, можно скачать по кнопке ниже.
+								</p>
+								<a href="#request" class="modal-trigger bttn-white">Заказать оборудование</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section> -->
+		<section id="brands">
+			<div class="container">
+				<div class="row flex">
+					<div class="col">
+						<h2>
+							<strong>Бренды</strong>
+							<span>с которыми мы работаем</span>
+						</h2>
+					</div>
+					<div class="brands-wrapper">
+						<div title="Spring thread" class="brand">
+							<img data-src="/assets/img/brands/spring-thread.svg" alt="Spring thread" class="lazy" />
+							<div class="anchor tl"></div>
+							<div class="anchor tr"></div>
+							<div class="anchor bl"></div>
+							<div class="anchor br"></div>
+						</div>
+						<div title="Collost" class="brand">
+							<img data-src="/assets/img/brands/collost.svg" alt="Collost" class="lazy" />
+							<div class="anchor tl"></div>
+							<div class="anchor tr"></div>
+							<div class="anchor bl"></div>
+							<div class="anchor br"></div>
+						</div>
+						<div title="Aptos" class="brand">
+							<img data-src="/assets/img/brands/aptos.svg" alt="Aptos" class="lazy" />
+							<div class="anchor tl"></div>
+							<div class="anchor tr"></div>
+							<div class="anchor bl"></div>
+							<div class="anchor br"></div>
+						</div>
+						<div title="Mint lift" class="brand">
+							<img data-src="/assets/img/brands/mint-lift.svg" alt="Mint lift" class="lazy" />
+							<div class="anchor tl"></div>
+							<div class="anchor tr"></div>
+							<div class="anchor bl"></div>
+							<div class="anchor br"></div>
+						</div>
+						<div title="Elasticum" class="brand">
+							<img data-src="/assets/img/brands/elasticum.svg" alt="Elasticum" class="lazy" />
+							<div class="anchor tl"></div>
+							<div class="anchor tr"></div>
+							<div class="anchor bl"></div>
+							<div class="anchor br"></div>
+						</div>
+						<div title="wiQo®" class="brand">
+							<img data-src="/assets/img/brands/wiqo.svg" alt="wiQo®" class="lazy" />
+							<div class="anchor tl"></div>
+							<div class="anchor tr"></div>
+							<div class="anchor bl"></div>
+							<div class="anchor br"></div>
+						</div>
+						<div title="GT" class="brand">
+							<img data-src="/assets/img/brands/gt.svg" alt="GT" class="lazy" />
+							<div class="anchor tl"></div>
+							<div class="anchor tr"></div>
+							<div class="anchor bl"></div>
+							<div class="anchor br"></div>
+						</div>
+						<div title="Linerase" class="brand">
+							<img data-src="/assets/img/brands/linerase.svg" alt="Linerase" class="lazy" />
+							<div class="anchor tl"></div>
+							<div class="anchor tr"></div>
+							<div class="anchor bl"></div>
+							<div class="anchor br"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="news">
+			<div class="container">
+				<div class="row flex">
+					<div class="col">
+						<div class="news-header">
+							<h2>
+								<strong>Новости</strong>
+								<span>нашей клиники</span>
+							</h2>
+							<a href=""><i class="bx bx-rss"></i></a>
+						</div>
+					</div>
+					<article class="col l4 m6 s12">
+						<a href="/news-entry.html">
+							<img data-src="/assets/img/news/1.jpg" alt="Социальный проект: можем, хотим и делаем" class="lazy responsive-img" />
+							<big>Социальный проект: можем, хотим и делаем</big>
+							<small>только что</small>
+						</a>
+					</article>
+					<article class="col l4 m6 s12">
+						<a href="/news-entry.html">
+							<img data-src="/assets/img/news/2.jpg" alt="Нити Груздева: минимум травматизации, максимум эффекта" class="lazy responsive-img" />
+							<big>Нити Груздева: минимум травматизации, максимум эффекта</big>
+							<small>2 дня назад</small>
+						</a>
+					</article>
+					<article class="col l4 m6 s12">
+						<a href="/news-entry.html">
+							<img data-src="/assets/img/news/3.jpg" alt="Осень — идеальное время фотоомоложения!" class="lazy responsive-img" />
+							<big>Осень — идеальное время фотоомоложения!</big>
+							<small>неделю назад</small>
+						</a>
+					</article>
+
+					<div class="col s12 center-align">
+						<a href="/news.html" class="bttn-outline">Читать все</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="contacts">
+			<div class="data-wrapper">
+				<div class="container">
+					<div class="row">
+						<div class="col xl4 l5 m12">
+							<img data-src="/assets/img/ks-contacts-logo.svg" alt="" class="responsive-img lazy" />
+							<h2>
+								<strong>Контакты</strong>
+								<span>мы ждём вас</span>
+							</h2>
+							<div class="kv-wrapper">
+								<div class="kv-pair">
+									<small class="key">телефон</small>
+									<a class="value" href="tel:+79184313050">+7 (918) 431-30-50</a>
+								</div>
+								<div class="kv-pair">
+									<small class="key">адрес</small>
+									<span class="value">Краснодар, ул. Дальняя 27, оф. 16</span>
+								</div>
+								<div class="kv-pair">
+									<small class="key">Время работы</small>
+									<span class="value">с 10-00 до 20-00</span>
+								</div>
+							</div>
+							<div class="contacts-action">
+								<a href="https://wa.me/+79615353510" class="bttn-outline">Записаться на приём</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="map-wrapper">
+				<div class="row flex">
+					<div class="col l7 offset-l5 map-container">
+						<div class="map-wrapper">
+							<div id="map"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col xl3 l4 m6 s12">
+					<a href="">
+						<img data-src="/assets/img/logo-white.svg" alt="На главную" class="lazy responsive-img" />
+					</a>
+				</div>
+				<div class="col xl9 l12">
+					<div class="navi-wrapper">
+						<nav id="n1">
+							<small>Навигация</small>
+							<ul>
+								<li><a href="/about.html">О клинике</a></li>
+								<li><a href="/news.html">Новости</a></li>
+								<li><a href="/price.html">Цены</a></li>
+								<li><a href="/contacts.html">Контакты</a></li>
+							</ul>
+						</nav>
+						<nav id="n2">
+							<small>Услуги</small>
+							<ul>
+								<li>
+									<a href="/piling.html">Пилинг для лица</a>
+								</li>
+								<li>
+									<a href="/smas.html">SMAS-лифтинг</a>
+								</li>
+								<li>
+									<a href="/rf.html">RF-лифтинг</a>
+								</li>
+								<li>
+									<a href="/vessel-removal.html">Удаление сосудов</a>
+								</li>
+								<li>
+									<a href="/liposaction.html">Лазерная липосакция</a>
+								</li>
+								<li>
+									<a href="/epilation.html">Лазерная эпиляция</a>
+								</li>
+								<li>
+									<a href="/scars-healing.html">Лечение рубцов</a>
+								</li>
+								<li>
+									<a href="/injections.html">Инъекции ботулотоксина</a>
+								</li>
+								<li>
+									<a href="/contour-plastic.html">Контурная пластика</a>
+								</li>
+								<li>
+									<a href="/lips-enlargement.html">Увеличение губ</a>
+								</li>
+								<li>
+									<a href="/threading.html">Нитевой лифтинг</a>
+								</li>
+								<li>
+									<a href="/beauty-drips.html">Капельницы красоты</a>
+								</li>
+
+							</ul>
+						</nav>
+						<nav id="n3">
+							<div class="n-block">
+								<small>запись на приём</small>
+								<a href="https://wa.me/+79615353510">+7 (961) 535-35-10</a>
+							</div>
+							<div class="n-block">
+								<small>консультация</small>
+								<a class="value" href="tel:+79184313050">+7 (918) 431-30-50</a>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="/assets/js/master.js"></script>
+</body>
+
+</html>

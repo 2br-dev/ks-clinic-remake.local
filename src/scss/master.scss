@@ -1,0 +1,12 @@
+@import "./frameworks/materialize";
+@import "../../node_modules/swiper/swiper.scss";
+@import "../../node_modules/swiper/modules/grid.scss";
+
+@import "./parts/vars";
+@import "./parts/custom_grid";
+@import "./parts/common";
+
+@import "./parts/header";
+@import "./parts/footer";
+
+@import "./parts/typography";

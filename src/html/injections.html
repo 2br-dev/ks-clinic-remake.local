@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		@@include('./parts/head.html', {title: 'КС Клиник - Инъекции ботулотоксина', styles: 'service.css'})
+	</head>
+	<body>
+		@@include('./parts/header.html')
+		<main id="service">
+			<section id="description">
+				<div class="container">
+					<div class="row flex">
+						<div class="col xl3 l4 hide-l-down">
+							<div class="sidebar-wrapper">
+								<h3>Услуги</h3>
+								<ul class="service-navi">
+									@@loop('./parts/service-nav.html', './data/services.json')
+								</ul>
+							</div>
+						</div>
+						<div class="col xl8 offset-xl1 offset-l1 l7 offset-xl1 m12">
+							<div class="row">
+								<h1>Инъекции ботулотоксина</h1>
+								<div class="col s12">
+									<div class="img-wrapper">
+										<img
+											data-src="/assets/img/service-images/injections-large.jpg"
+											alt=""
+											class="lazy responsive-img"
+										/>
+									</div>
+								</div>
+								<div class="col">
+									<h2 class="small">Возраст на паузу!</h2>
+								</div>
+								<div class="col xl6 l12 m6 s12">
+									<p>
+										Точная, ювелирная работа и правильно рассчитанный крус - всё это об Инъекциях
+										ботулотоксина в "КС Клиник"! Наши врачи деликатно - внутримышечно или подкожно -
+										вводят белок ботулотоксин для блокировки нервных мышечных импульсов. Инъекции
+										ботулотоксина применяют, чтобы:
+									</p>
+									<ul class="browser-default">
+										<li>
+											Корректировать возрастные изменения. Препарат расслабляет мышцы, отчего кожа
+											над ними разглаживается, исчезают изломы и морщинки, восстанавливается
+											упругость и эластичность
+										</li>
+										<li>
+											Устранить асимметрию лица. Инъекции ботулотоксина могут исправить положение
+											век, линию и очертания рото-губной зоны, кончик и крылья носа, а также
+											векторы бровных дуг
+										</li>
+									</ul>
+									<p>
+										Инъекции ботулотоксина - популярнейшая процедура во всем мире. Часто к ней
+										прибегают селебрити и политики, однако в "КС Клиник" подобное отношение и
+										уровень сервиса распространяется на каждого пациента!
+									</p>
+								</div>
+								<div class="col xl6 l12 m6 s12">
+									<p>
+										У процедуры имеется ряд противопоказаний. Детально о том, подходит ли данная
+										методика вам, может сказать только врач на личном приёме, но мы перечислим
+										наиболее частотные триггеры запрета:
+									</p>
+									<ul class="browser-default">
+										<li>Беременность и период лактации;</li>
+										<li>Онкологические заболеваний;</li>
+										<li>Заболевания эндокринной и иммунной систем;</li>
+										<li>Сердечно-сосудистые заболеваний;</li>
+										<li>Вирусные и инфекционные заболевания;</li>
+										<li>Миастения - заболевание, связанное с дистрофией скелетных мышц.</li>
+									</ul>
+									<p>Подробнее о показаниях и запретах - лично на приёме!</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			@@include('./parts/c2a-block.html') @@include('./parts/contacts-block.html')
+		</main>
+		@@include('./parts/footer.html')
+		<script src="/assets/js/master.js"></script>
+	</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		@@include('./parts/head.html', {title: 'КС Клиник - главная', styles: 'news.css'})
+	</head>
+	<body>
+		@@include('./parts/header.html')
+		<main id="news">
+			<section>
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<h1>Новости клиники</h1>
+						</div>
+						@@loop('./parts/news-card.html', './data/news.json')
+					</div>
+				</div>
+			</section>
+			@@include('./parts/contacts-block.html')
+		</main>
+		@@include('./parts/footer.html')
+		<script src="/assets/js/master.js"></script>
+	</body>
+</html>

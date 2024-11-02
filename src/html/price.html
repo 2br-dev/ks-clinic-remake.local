@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		@@include('./parts/head.html', {title: 'КС Клиник - Прайс-лист', styles: 'price.css'})
+	</head>
+	<body>
+		@@include('./parts/header.html')
+		<main id="service">
+			<section id="description">
+				<div class="container">
+					<div class="row flex">
+						<div class="col xl3 l4 hide-l-down">
+							<div class="sidebar-wrapper">
+								<h3>Разделы</h3>
+								<ul class="service-navi">
+									@@loop('./parts/price-nav.html', './data/price.json')
+								</ul>
+							</div>
+						</div>
+						<div class="col xl8 offset-xl1 offset-l1 l7 offset-xl1 m12">
+							<h1>Цены</h1>
+							<div class="price-wrapper">@@loop('./parts/price-entry.html', './data/price.json')</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			@@include('./parts/c2a-block.html') @@include('./parts/contacts-block.html')
+		</main>
+		@@include('./parts/footer.html')
+		<script src="/assets/js/master.js"></script>
+	</body>
+</html>

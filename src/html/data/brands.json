@@ -1,0 +1,42 @@
+[
+	{
+		"name": "Spring thread",
+		"link": "https://spring-thread.ru",
+		"logo": "/assets/img/brands/spring-thread.svg"
+	},
+	{
+		"name": "Collost",
+		"link": "https://collost.ru",
+		"logo": "/assets/img/brands/collost.svg"
+	},
+	{
+		"name": "Aptos",
+		"link": "https://aptoslabs.com",
+		"logo": "/assets/img/brands/aptos.svg"
+	},
+	{
+		"name": "Mint lift",
+		"link": "https://mintlift.com",
+		"logo": "/assets/img/brands/mint-lift.svg"
+	},
+	{
+		"name": "Elasticum",
+		"link": "https://www.korpo.com/product-category/products/elasticum/",
+		"logo": "/assets/img/brands/elasticum.svg"
+	},
+	{
+		"name": "wiQo®",
+		"link": "https://www.med.wiqo.com/",
+		"logo": "/assets/img/brands/wiqo.svg"
+	},
+	{
+		"name": "GT",
+		"link": "https://gruzdevtrend.ru",
+		"logo": "/assets/img/brands/gt.svg"
+	},
+	{
+		"name": "Linerase",
+		"link": "https://linerase.pro",
+		"logo": "/assets/img/brands/linerase.svg"
+	}
+]

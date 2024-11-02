@@ -1,0 +1,285 @@
+@import "../parts/vars";
+
+main#about {
+	& section {
+		&#history {
+			counter-set: headers 1;
+			padding: 0;
+			padding-top: 100px;
+			overflow: hidden;
+
+			& .img-wrapper {
+				position: relative;
+
+				&:before {
+					content: "";
+					display: block;
+					width: 50vw;
+					height: 100%;
+					background-color: $primary;
+					position: absolute;
+					z-index: -1;
+					right: 100px;
+					top: -100px;
+
+					@media (max-width: $large) {
+						right: unset;
+						left: -100px;
+					}
+				}
+
+				& img {
+					display: block;
+				}
+			}
+
+			& .history-content {
+				columns: 2;
+				column-gap: 40px;
+
+				@media (max-width: $medium) {
+					columns: 1;
+				}
+
+				& p {
+					margin: 0;
+				}
+			}
+		}
+
+		&#timeline-pre {
+			padding-bottom: 0;
+		}
+
+		&#timeline {
+			overflow-x: auto;
+			scroll-behavior: smooth;
+			font-size: 16px;
+			padding-top: 0;
+
+			&::-webkit-scrollbar {
+				height: 0;
+			}
+
+			// Только для десктопа
+			@media (min-width: 850px) {
+				& .timeline-wrapper {
+					& .container {
+						display: flex;
+						justify-content: space-between;
+						min-width: 1600px;
+						position: relative;
+					}
+
+					& .timeline-liner {
+						margin-top: 480px;
+						margin-bottom: 300px;
+						position: relative;
+						padding: 0 80px;
+					}
+
+					& .timeline-background {
+						content: "";
+						display: block;
+						width: 100%;
+						height: 368px;
+						transform: translateY(calc(-50% + 12px));
+						background-image: url(/assets/img/timeline-pattern.svg);
+						background-repeat: repeat-x;
+						position: absolute;
+					}
+
+					& .timeline-event {
+						position: relative;
+						margin-top: 40px;
+						color: $accent;
+
+						&:before {
+							content: "";
+							display: block;
+							width: 34px;
+							aspect-ratio: 1 / 1;
+							position: absolute;
+							background: #fff;
+							border: 6px solid $accent;
+							border-radius: 50%;
+							left: 50%;
+							transform: translateX(-50%);
+							bottom: calc(100% + 20px);
+						}
+
+						& .eventlist {
+							position: relative;
+							position: absolute;
+							left: 50%;
+							transform: translateX(-50%);
+							width: max-content;
+							max-width: 260px;
+							margin: 0;
+							top: calc(100% + 30px);
+							color: $text;
+							background-color: #fff;
+							padding: 20px;
+							box-sizing: border-box;
+							box-shadow: 0 4px 12px rgba(black, 0.2);
+
+							&:before {
+								content: "";
+								display: block;
+								width: 0;
+								height: 0;
+								position: absolute;
+								top: -20px;
+								left: calc(50% - 12px);
+								border-bottom: 12px solid #fff;
+								border-top: 12px solid transparent;
+								border-left: 12px solid transparent;
+								border-right: 12px solid transparent;
+							}
+
+							& li {
+								display: flex;
+								padding: 3px 0;
+								line-height: 1.4em;
+
+								&:before {
+									content: "•";
+									margin-right: 12px;
+									display: block;
+								}
+
+								&:only-child {
+									&:before {
+										content: "";
+										margin: 0;
+									}
+								}
+							}
+						}
+
+						&:nth-child(odd) {
+							& .eventlist {
+								top: unset;
+								bottom: calc(100% + 90px);
+
+								&:before {
+									content: "";
+									display: block;
+									width: 0;
+									height: 0;
+									position: absolute;
+									bottom: -20px;
+									top: unset;
+									left: calc(50% - 12px);
+									border-top: 12px solid #fff;
+									border-bottom: 12px solid transparent;
+									border-left: 12px solid transparent;
+									border-right: 12px solid transparent;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			// Для мобильников
+			@media (max-width: 850px) {
+				.timeline-liner {
+					& .container {
+						position: relative;
+						padding: 40px 0;
+
+						&:before {
+							content: "";
+							display: block;
+							width: 8px;
+							position: absolute;
+							height: 100%;
+							background-color: $accent;
+							top: 0;
+							left: 0;
+						}
+
+						& .timeline-event {
+							padding-left: 20px;
+							position: relative;
+							color: $accent;
+							font-size: 21px;
+
+							&:before {
+								content: "";
+								display: block;
+								width: 20px;
+								aspect-ratio: 1 / 1;
+								border: 4px solid $accent;
+								border-radius: 50%;
+								position: absolute;
+								background-color: #fff;
+								left: -6px;
+							}
+
+							& .eventlist {
+								color: $text;
+								font-size: 16px;
+
+								& li {
+									display: flex;
+
+									&:before {
+										content: "•";
+										margin-right: 12px;
+									}
+
+									&:only-child:before {
+										content: "";
+										margin: 0;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		&#team {
+			counter-set: headers 3;
+
+			& .team-wrapper {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+
+				$spacing: 2vw;
+
+				& .team-member {
+					margin-bottom: $spacing;
+					width: calc(50% - #{$spacing});
+
+					@media (max-width: $small) {
+						width: 100%;
+					}
+
+					& img {
+						width: 100%;
+						margin-bottom: 20px;
+					}
+
+					&-name {
+						font-size: clamp(18px, 2vw, 24px);
+					}
+
+					&-position {
+						font-size: clamp(14px, 1.5vw, 18px);
+						color: $accent;
+					}
+				}
+			}
+		}
+
+		&#parallax {
+			padding: 16vmax;
+			background-size: cover;
+		}
+	}
+}

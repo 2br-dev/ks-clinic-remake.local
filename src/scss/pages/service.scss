@@ -1,0 +1,64 @@
+@import "../parts/vars";
+
+body {
+	& main#service {
+		& h1 {
+			margin-top: 0;
+		}
+
+		& .img-wrapper {
+			margin-bottom: 40px;
+		}
+
+		& .sidebar-wrapper {
+			border-right: 1px solid $accent;
+			position: sticky;
+			top: 120px;
+		}
+
+		& .service-navi {
+			& li {
+				& a {
+					display: block;
+					padding: clamp(8px, 0.65vw, 16px) 20px;
+					position: relative;
+					color: $text;
+
+					&:before {
+						content: "";
+						display: block;
+						position: absolute;
+						width: 100%;
+						height: 100%;
+						left: 0;
+						top: 0;
+						background-image: url(/assets/img/pattern.svg);
+						transition: opacity 0.2s;
+						opacity: 0;
+					}
+
+					&:hover:before {
+						opacity: 0.3;
+					}
+				}
+				&:not(:last-of-type) a {
+					border-bottom: 1px solid $accent;
+				}
+			}
+		}
+
+		& section {
+			&#description {
+				& h2.small {
+					letter-spacing: unset;
+					font-size: clamp(18px, 3vw, 21px);
+					font-weight: bold;
+
+					&:before {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}

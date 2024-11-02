@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		@@include('./parts/head.html', {title: 'КС Клиник - SMAS-лифтинг', styles: 'service.css'})
+	</head>
+	<body>
+		@@include('./parts/header.html')
+		<main id="service">
+			<section id="description">
+				<div class="container">
+					<div class="row flex">
+						<div class="col xl3 l4 hide-l-down">
+							<div class="sidebar-wrapper">
+								<h3>Услуги</h3>
+								<ul class="service-navi">
+									@@loop('./parts/service-nav.html', './data/services.json')
+								</ul>
+							</div>
+						</div>
+						<div class="col xl8 offset-xl1 offset-l1 l7 offset-xl1 m12">
+							<div class="row">
+								<h1>SMAS-лифтинг</h1>
+								<div class="col s12">
+									<div class="img-wrapper">
+										<img
+											data-src="/assets/img/service-images/smas-large.jpg"
+											alt=""
+											class="lazy responsive-img"
+										/>
+									</div>
+								</div>
+								<div class="col xl6 l12 m6 s12">
+									<h2 class="small">Подтяжка без хирургии!</h2>
+									<p>
+										SMAS лифтинг - это неинвазивная, мягкая процедура восстановления тонуса и
+										свежести кожи с помощью ультразвуковых волн специального аппарата. Волны
+										проникают глубоко - в мышечно-апоневротический слой - и с легким нагревом
+										стимулирует выработку естественного коллагена.
+									</p>
+									<p>SMAS лифтинг в "КС Клиник" - это</p>
+									<ul class="browser-default">
+										<li>Подтяжка и восстановление упругости без операций;</li>
+										<li>Уменьшение возрастных и мимических морщин;</li>
+										<li>Выравнивание тона и сглаживание рельефа кожи;</li>
+										<li>Активация природных регенерационных процессов.</li>
+									</ul>
+									<p>
+										Зоны проведения процедуры SMAS лифтинга разнятся в зависимости от ваших
+										индивидуальных особенностей. Это обговаривается с врачом-косметологом наедине,
+										но, как правило, SMAS наиболее часто применяют на нижней половине лица - средней
+										и последней третях.
+									</p>
+								</div>
+								<div class="col xl6 l12 m6 s12">
+									<h2 class="small">Противопоказания к процедуре</h2>
+									<p>
+										Детально показания и противопоказания к проведению процедуры вам расскажет лично
+										врач-косметолог "КС Клиник", а ниже приведен перечень наиболее частотных
+										запретов:
+									</p>
+									<ul class="browser-default">
+										<li>Период беременности и лактации;</li>
+										<li>Онкологические заболевания;</li>
+										<li>
+											Хронические сердечно-сосудистые заболевания и патологии эндокринной системы;
+										</li>
+										<li>
+											Наличие кардиостимуляторов, металлических штифтов и иных имплантов в зоне
+											воздействия;
+										</li>
+										<li>Инфекционные заболевания, воспаления;</li>
+										<li>Угревая сыпь или акне.</li>
+									</ul>
+									<p>
+										Более подробно о допустимости проведения процедуры в вашем конкретном случае -
+										при личном визите в "КС Клиник"!
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			@@include('./parts/c2a-block.html') @@include('./parts/contacts-block.html')
+		</main>
+		@@include('./parts/footer.html')
+		<script src="/assets/js/master.js"></script>
+	</body>
+</html>

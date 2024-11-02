@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		@@include('./parts/head.html', {title: 'КС Клиник - Капельницы красоты', styles: 'service.css'})
+	</head>
+	<body>
+		@@include('./parts/header.html')
+		<main id="service">
+			<section id="description">
+				<div class="container">
+					<div class="row flex">
+						<div class="col xl3 l4 hide-l-down">
+							<div class="sidebar-wrapper">
+								<h3>Услуги</h3>
+								<ul class="service-navi">
+									@@loop('./parts/service-nav.html', './data/services.json')
+								</ul>
+							</div>
+						</div>
+						<div class="col xl8 offset-xl1 offset-l1 l7 offset-xl1 m12">
+							<div class="row">
+								<h1>Капельницы красоты</h1>
+								<div class="col s12">
+									<div class="img-wrapper">
+										<img
+											data-src="/assets/img/service-images/beauty-drips-large.jpg"
+											alt=""
+											class="lazy responsive-img"
+										/>
+									</div>
+								</div>
+								<div class="col xl6 l12 m6 s12">
+									<p>
+										Особый вид максимально деликатных омолаживающих и укрепляющих бьюти-процедур "КС
+										Клиник" - это капельницы красоты. Полезный питательный коктейль из витаминов,
+										минералов, кислот и микроэлементов щадящего действия вводится в организм
+										напрямую в кровоток, ускоряя естественную регенерацию и запуская
+										восстановительные процессы совсем как в юном возрасте!
+									</p>
+									<p>
+										Главная цель капельниц красоты - детокс, укрепление иммунитета и восполнение
+										дефицита витаминов, которые трудно получить натуральным образом. Капельницы
+										красоты в "КС Клиник":
+									</p>
+									<ul class="browser-default">
+										<li>Омолаживают весь организм изнутри;</li>
+										<li>Работает на естественные, природные процессы тела человека;</li>
+										<li>
+											Обеспечивают комплексный детокс и вымывание всего вредного и ненужного,
+											замещая это полезным и питательным;
+										</li>
+										<li>
+											Обеспечивают здоровое сияние кожи, укрепляют ногти, волосы, улучшают
+											самочувствие.
+										</li>
+									</ul>
+								</div>
+								<div class="col xl6 l12 m6 s12">
+									<p>Виды капельниц красоты в "КС Клиник":</p>
+									<ul class="browser-default">
+										<li>Анти купероз;</li>
+										<li>Анти акне;</li>
+										<li>Золушка;</li>
+										<li>Экспресс похудение;</li>
+										<li>Ум и Энергия;</li>
+										<li>Иммунитет + ;</li>
+										<li>Поддержка печени;</li>
+										<li>Спорт;</li>
+										<li>Спецпрограмма: коллагеностимулирующая</li>
+										<li>Курс из 3 процедур</li>
+										<li>Спецпрограмма трихология</li>
+										<li>Курс из 5 процедур</li>
+									</ul>
+									<p>
+										Капельницы красоты - медицинская процедура, имеющая ряд противопоказаний.
+										Подробнее о том, подойдет ли вам лично какая-либо из методик, может сказать
+										только врач "КС Клиник" на личном приёме!
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			@@include('./parts/c2a-block.html') @@include('./parts/contacts-block.html')
+		</main>
+		@@include('./parts/footer.html')
+		<script src="/assets/js/master.js"></script>
+	</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		@@include('./parts/head.html', {title: 'КС Клиник - о клинике', styles:
+		'about.css'})
+	</head>
+	<body>
+		@@include('./parts/header.html')
+		<main id="about">
+			<section id="intro">
+				<div class="container">
+					<div class="row flex">
+						<div class="col xl3 l4 order-l1">
+							<h1>О клинике</h1>
+							<p>
+								Задача организации, в особенности же
+								синтетическое тестирование однозначно определяет
+								каждого участника как способного принимать
+								собственные решения касаемо своевременного
+								выполнения.
+							</p>
+							<a href="/services.html" class="bttn-outline"
+								>Наши услуги</a
+							>
+						</div>
+						<div class="col l8 offset-xl1 m12">
+							<div class="img-wrapper">
+								<img
+									data-src="/assets/img/topper.jpg"
+									alt=""
+									class="responsive-img lazy"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="history">
+				<div class="container">
+					<div class="row flex vcenter">
+						<div class="col l4 m12">
+							<div class="img-wrapper">
+								<img
+									data-src="/assets/img/history.jpg"
+									alt=""
+									class="lazy responsive-img"
+								/>
+							</div>
+						</div>
+						<div class="col l7 offset-l1 m12">
+							<h2>
+								<strong>Немного истории</strong>
+								<span>Москва не сразу строилась</span>
+							</h2>
+							<div class="history-content">
+								<p>
+									Вот вам яркий пример современных тенденций —
+									реализация намеченных плановых заданий
+									обеспечивает широкому кругу (специалистов)
+									участие в формировании поставленных
+									обществом задач. Но реализация намеченных
+									плановых заданий однозначно определяет
+									каждого участника как способного принимать
+									собственные решения касаемо распределения
+									внутренних резервов и ресурсов. А ещё
+									активно развивающиеся страны третьего мира
+									функционально разнесены на независимые
+									элементы. Таким образом, выбранный нами
+									инновационный путь способствует повышению
+									качества приоретизации разума над эмоциями.
+									Вот вам яркий пример современных тенденций —
+									реализация намеченных плановых заданий
+									обеспечивает широкому кругу (специалистов)
+									участие в формировании поставленных
+									обществом задач. Но реализация намеченных
+									плановых заданий однозначно определяет
+									каждого участника как способного принимать
+									собственные решения касаемо распределения
+									внутренних резервов и ресурсов. А ещё
+									активно развивающиеся страны третьего мира
+									функционально разнесены на независимые
+									элементы. Таким образом, выбранный нами
+									инновационный путь способствует повышению
+									качества приоретизации разума над эмоциями.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="timeline-pre">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<h2>
+								<strong>Как всё начиналось</strong>
+								<span>или начало всех начал</span>
+							</h2>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="timeline">
+				<div class="timeline-scroller">
+					<div class="timeline-wrapper">
+						<div class="timeline-background"></div>
+						<div class="timeline-liner">
+							<div class="container">
+								@@loop('./parts/timeline-event.html',
+								'./data/timeline.json')
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="team">
+				<div class="container">
+					<div class="row">
+						<div class="col l3">
+							<img
+								src="/assets/img/ks-square.svg"
+								alt=""
+								class="lazy responsive-img"
+							/>
+							<p>
+								Вот вам яркий пример современных тенденций —
+								реализация намеченных плановых заданий
+								обеспечивает широкому кругу (специалистов)
+								участие в формировании поставленных обществом
+								задач. Но реализация намеченных плановых заданий
+								однозначно определяет каждого участника как
+								способного принимать собственные решения касаемо
+								распределения внутренних резервов и ресурсов. А
+								ещё активно развивающиеся страны третьего мира
+								функционально разнесены на независимые элементы.
+								Таким образом, выбранный нами инновационный путь
+								способствует повышению качества приоретизации
+								разума над эмоциями.
+							</p>
+						</div>
+						<div class="col l8 offset-l1">
+							<div class="row">
+								<div class="col">
+									<h2>
+										<strong>Наша команда</strong>
+										<span>кому вы доверяете</span>
+									</h2>
+									<div class="team-wrapper">
+										@@loop('./parts/team-member.html',
+										'./data/team.json')
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section
+				id="parallax"
+				class="lazy"
+				data-bg="/assets/img/about-parallax.jpg"
+			></section>
+			@@include('./parts/services-block.html')
+			@@include('./parts/contacts-block.html')
+		</main>
+		@@include('./parts/footer.html')
+		<script src="/assets/js/master.js"></script>
+	</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		@@include('./parts/head.html', {title: 'КС Клиник - главная', styles: 'main.css'})
+	</head>
+	<body>
+		@@include('./parts/header.html')
+		<main id="main">
+			<section id="hero">
+				<div class="swiper" id="main-swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img data-src="/assets/img/slides/slide1.jpg" alt="Слайд 1" class="lazy responsive-img" />
+						</div>
+						<div class="swiper-slide">
+							<img data-src="/assets/img/slides/slide2.jpg" alt="Слайд 2" class="lazy responsive-img" />
+						</div>
+						<div class="swiper-slide">
+							<img data-src="/assets/img/slides/slide3.jpg" alt="Слайд 3" class="lazy responsive-img" />
+						</div>
+						<div id="hero-progress"></div>
+					</div>
+				</div>
+				<div class="text-wrapper">
+					<div class="container">
+						<div class="row">
+							<div class="col l4 m6 s8 xs12">
+								<h1>
+									<strong>Красота</strong>
+									<span>с медицинским подходом</span>
+								</h1>
+								<p>
+									Эстетика и здоровье — обязательные составляющие вновь обретённой молодости.
+									Совмещаем компоненты по-науке и исключительно медицинскими сертифицированными
+									методами.
+								</p>
+								<a href="/about.html" class="bttn-white">О клинике</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="welcome">
+				<div class="container">
+					<div class="row flex">
+						<div class="col xl8 l7 m6 s12 order-m1">
+							<h2><strong>Добро пожаловать</strong></h2>
+							<p>
+								«КС Клиник» — это современная косметологическая клиника, где эстетика неразрывно связана
+								с технологическим совершенством. Мы верим, что вернуть молодость помогают исключительно
+								врачебные практики, научные знания и лучшие аппараты. Надёжные и самые эффективные
+								решения — сертифицированные и безопасные: мы за тот результат, что гарантирован как
+								исследованиями, так мировым и личным опытом.
+							</p>
+						</div>
+						<div class="col xl3 offset-xl1 l4 offset-l1 m5 offset-m1 s12">
+							<div class="img-wrapper">
+								<img
+									data-src="/assets/img/welcome.jpg"
+									alt="Добро пожаловать"
+									class="lazy responsive-img"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="services">
+				<div class="container">
+					<div class="row flex vbottom">
+						<div class="col s12">
+							<div class="swiper-navi hide-l-down">
+								<nav>
+									<a href="" class="prev">
+										<img src="/assets/img/slider-prev.svg" alt="" />
+									</a>
+									<a href="" class="next">
+										<img src="/assets/img/slider-next.svg" alt="" />
+									</a>
+								</nav>
+								<div id="service-pagination"></div>
+							</div>
+						</div>
+						<div class="col xl3 l12">
+							<h2>
+								<strong>Наши услуги</strong>
+								<span>помогут вам сиять</span>
+							</h2>
+							<p>
+								Как косметологическая клиника, мы предлагаем пациентам современные, но уже проверенные
+								практики и процедуры. Но будьте внимательны: перед назначением необходима врачебная
+								консультация!
+							</p>
+							<a href="/services.html" class="bttn-white">Смотреть все</a>
+						</div>
+						<div class="col xl8 offset-xl1 l12 hide-l-down">
+							<div class="swiper" id="service-slider">
+								<div class="swiper-wrapper">
+									@@loop('./parts/service-slide.html', './data/services.json')
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row mobile-cards-wrapper">
+						<div class="col s12 hide-l-up">
+							<div class="row">@@loop('./parts/service-card.html', './data/services.json')</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="possibilities">
+				<div class="container">
+					<div class="row flex">
+						<div class="col xl2 offset-xl1 l3 m4 s12">
+							<div class="img-wrapper">
+								<img data-src="/assets/img/ks-square.svg" alt="КС клиник" class="lazy responsive-img" />
+							</div>
+						</div>
+						<div class="col xl7 offset-xl1 l8 offset-l1 m8 s12">
+							<h2>
+								<strong>Технологии</strong>
+								<span>для совершенства</span>
+							</h2>
+							<p>
+								Результат эстетической косметологии — результат работы как квалифицированных врачей, так
+								и надёжной, современной техники. Мы лично и очень тщательно отбираем только лучшие
+								аппараты, но также опираемся на опыт их использования и отзывы наших коллег по сфере.
+							</p>
+							<p>
+								Чувствуя себя причастными к большой семье бьюти-мастеров, мы, пока в пилотном режиме,
+								тестируем сервис дистрибуции косметологических аппаратов напрямую от
+								заводов-производителей. Так мы надеемся существенно поднять общий уровень косметологии в
+								России, а вместе с тем стимулировать развитие производственной сферы в стране — так,
+								чтобы вновь почувствовать себя самыми-самыми могли как можно больше женщин. И мужчин,
+								конечно.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- <section id="parallax" class="lazy" data-bg="/assets/img/parallax.jpg">
+				<div class="container">
+					<div class="row">
+						<div class="col xl offset-xl2 xl8 l10 offset-l1 m12">
+							<div class="parallax-content">
+								<h2>
+									<strong>Совершенствуйтесь!</strong>
+								</h2>
+								<p>
+									Подробный каталог косметологических аппаратов, которыми мы пользуемся сами и в
+									качестве которых мы уверены на все 100, можно скачать по кнопке ниже.
+								</p>
+								<a href="#request" class="modal-trigger bttn-white">Заказать оборудование</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section> -->
+			<section id="brands">
+				<div class="container">
+					<div class="row flex">
+						<div class="col">
+							<h2>
+								<strong>Бренды</strong>
+								<span>с которыми мы работаем</span>
+							</h2>
+						</div>
+						<div class="brands-wrapper">@@loop('./parts/brand.html', './data/brands.json')</div>
+					</div>
+				</div>
+			</section>
+			<section id="news">
+				<div class="container">
+					<div class="row flex">
+						<div class="col">
+							<div class="news-header">
+								<h2>
+									<strong>Новости</strong>
+									<span>нашей клиники</span>
+								</h2>
+								<a href=""><i class="bx bx-rss"></i></a>
+							</div>
+						</div>
+						@@loop('./parts/news-entry.html', './data/news.json')
+						<div class="col s12 center-align">
+							<a href="/news.html" class="bttn-outline">Читать все</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			@@include('./parts/contacts-block.html')
+		</main>
+		@@include('./parts/footer.html')
+		<script src="/assets/js/master.js"></script>
+	</body>
+</html>

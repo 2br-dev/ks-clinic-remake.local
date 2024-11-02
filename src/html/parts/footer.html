@@ -1,0 +1,40 @@
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col xl3 l4 m6 s12">
+				<a href="">
+					<img data-src="/assets/img/logo-white.svg" alt="На главную" class="lazy responsive-img" />
+				</a>
+			</div>
+			<div class="col xl9 l12">
+				<div class="navi-wrapper">
+					<nav id="n1">
+						<small>Навигация</small>
+						<ul>
+							<li><a href="/about.html">О клинике</a></li>
+							<li><a href="/news.html">Новости</a></li>
+							<li><a href="/price.html">Цены</a></li>
+							<li><a href="/contacts.html">Контакты</a></li>
+						</ul>
+					</nav>
+					<nav id="n2">
+						<small>Услуги</small>
+						<ul>
+							@@loop('./footer-link.html','./data/services.json')
+						</ul>
+					</nav>
+					<nav id="n3">
+						<div class="n-block">
+							<small>запись на приём</small>
+							<a href="https://wa.me/+79615353510">+7 (961) 535-35-10</a>
+						</div>
+						<div class="n-block">
+							<small>консультация</small>
+							<a class="value" href="tel:+79184313050">+7 (918) 431-30-50</a>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>

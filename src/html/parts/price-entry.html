@@ -1,0 +1,22 @@
+@@if(context.className){ @@if(className==="header" || className==="subheader"){
+@@if(className==="header"){<div class="section-anchor" id="@@anchor"></div>}
+<div class="header-cell@@if(className==="subheader"){ subheader}">
+	@@if(className==="header"){
+	<h2>@@name</h2>
+	} @@if(className==="subheader"){
+	<h3>@@name</h3>
+	}
+</div>
+} } @@if(!context.className){
+	<div class="price-entry">
+		<div class="code">
+			@@if(context.code){
+			<div class="code-val">@@code</div>
+			} @@if(context.tag){
+			<div class="tag">@@tag</div>
+			}
+		</div>
+		<div class="name">@@name</div>
+		<div class="price">@@if(context.price){ @@price }</div>
+	</div>
+}

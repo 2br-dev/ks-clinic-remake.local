@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		@@include('./parts/head.html', {title: 'КС Клиник - Лечение рубцов', styles: 'service.css'})
+	</head>
+	<body>
+		@@include('./parts/header.html')
+		<main id="service">
+			<section id="description">
+				<div class="container">
+					<div class="row flex">
+						<div class="col xl3 l4 hide-l-down">
+							<div class="sidebar-wrapper">
+								<h3>Услуги</h3>
+								<ul class="service-navi">
+									@@loop('./parts/service-nav.html', './data/services.json')
+								</ul>
+							</div>
+						</div>
+						<div class="col xl8 offset-xl1 offset-l1 l7 offset-xl1 m12">
+							<div class="row">
+								<h1>Лечение рубцов</h1>
+								<div class="col s12">
+									<div class="img-wrapper">
+										<img
+											data-src="/assets/img/service-images/scars-healing-large.jpg"
+											alt=""
+											class="lazy responsive-img"
+										/>
+									</div>
+									<h2 class="small"></h2>
+									<p>
+										В "КС Клиник" мы профессионально проводим полный комплекс процедур коррекции и
+										устранения шрамов, рубцов и иных травм-дефектов: как механического, так и
+										медицинского характера. Методика удаления подбирается индивидуально под ваши
+										показания и зависит от многих факторов. Но вот результаты всегда одинаковы:
+									</p>
+									<ul class="browser-default">
+										<li>Чистая, здоровая кожа</li>
+										<li>Гладкий ровный тон, минимальный рельеф</li>
+										<li>Отсутствие напоминающих остаточных эффектов</li>
+										<li>Глубокое увлажнение и комплекс питательных микроэлементов и кислот</li>
+									</ul>
+									<p>
+										В "КС Клиник" мы устраняем рубцы и шрамы, используя несколько методик для
+										достижения нужно вам результата:
+									</p>
+									<ul class="browser-default">
+										<li>
+											<strong>Шлифовка.</strong> Лазерное устранение мелких изъянов и сглаживание
+											крупных
+										</li>
+										<li>
+											<strong>Пилинги.</strong> Комплекс, направленный на обновление и регенерацию
+											верхних слоёв эпидермиса
+										</li>
+										<li>
+											<strong>Инъекции коллагена.</strong> Вводимый в глубокие слои дермы коллаген
+											применяется для устранения атрофических рубцах
+										</li>
+										<li>
+											<strong>Мезотерапия.</strong> Медикаментозные уколы растворов для питания,
+											улучшения обмена веществ и запуска процессов регенерации
+										</li>
+										<li>
+											<strong>Контурная пластика.</strong> Инъекции гиалуроновой кислоты для
+											восполнения утраченного объема
+										</li>
+										<li>
+											<strong>Физиотерапия.</strong> Аппаратное воздействие, тепловые процедуры,
+											массажи
+										</li>
+									</ul>
+									<p>
+										Каждый случай уникален, поэтому в "КС Клиник" мы разрабатываем индивидуальные
+										планы лечения конкретно для каждого случая. Узнайте, какой курс поможет вам -
+										запишитесь на приём к профессионалам!
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			@@include('./parts/c2a-block.html') @@include('./parts/contacts-block.html')
+		</main>
+		@@include('./parts/footer.html')
+		<script src="/assets/js/master.js"></script>
+	</body>
+</html>

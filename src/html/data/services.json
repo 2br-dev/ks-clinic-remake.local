@@ -1,0 +1,98 @@
+[
+	{
+		"pagetitle": "Пилинг для лица",
+		"anchor": "piling",
+		"icon": "/assets/img/service-images/piling.svg",
+		"image": "/assets/img/service-images/piling.jpg",
+		"description": "Уда­лим слои пов­реж­дён­ного или от­мер­шего эпи­дер­миса с по­мощью бе­зо­пас­ных кис­лот, за­пус­кая ес­тест­вен­ные про­цес­сы омо­ло­же­ния.",
+		"minPrice": "5 000₽"
+	},
+	{
+		"pagetitle": "SMAS-лифтинг",
+		"anchor": "smas",
+		"icon": "/assets/img/service-images/smas.svg",
+		"image": "/assets/img/service-images/smas.jpg",
+		"description": "Вос­ста­но­вим то­нус и све­жесть ко­жи, сти­му­ли­ру­ем вы­ра­бот­ку ес­тес­твен­ного кол­ла­гена с по­мощью уль­тра­зву­ко­вых волн тех­но­ло­гич­ного ап­па­рата.",
+		"minPrice": "5 000₽"
+	},
+	{
+		"pagetitle": "RF-лифтинг",
+		"anchor": "rf",
+		"icon": "/assets/img/service-images/rf.svg",
+		"image": "/assets/img/service-images/rf.jpg",
+		"description": "Вос­ста­но­вим уп­ру­гость ко­жи и вер­нём ей то­нус с по­мощью ра­дио­волн тех­но­ло­гич­ного сов­ре­мен­ного ап­па­рата. Бо­нус: уда­лим из­ли­шек себ­ума.",
+		"minPrice": "5 000₽"
+	},
+	{
+		"pagetitle": "Удаление сосудов",
+		"anchor": "vessel-removal",
+		"icon": "/assets/img/service-images/vessel-removal.svg",
+		"image": "/assets/img/service-images/vessel-removal.jpg",
+		"description": "Уда­лим со­су­дис­тые ри­сун­ки и пят­на с по­мощью про­це­дуры Ко­агу­ля­ции. Вмес­те с вра­чом вы най­дё­те наи­бо­лее под­хо­дя­щий вам спо­соб: ла­зер, ра­дио­вол­ны, скле­ро­те­ра­пия.",
+		"minPrice": "5 000₽"
+	},
+	{
+		"pagetitle": "Лазерная липосакция",
+		"anchor": "liposaction",
+		"icon": "/assets/img/service-images/liposaction.svg",
+		"image": "/assets/img/service-images/liposaction.jpg",
+		"description": "По­мо­жем об­рес­ти строй­ную фи­гу­ру без спорт­за­ла, диет и опе­ра­ций с по­мощью ма­ло­ин­ва­зив­ной про­це­дуры уда­ле­ния жи­ро­вых от­ло­же­ний на ла­зер­ном ап­па­рате.",
+		"minPrice": "5 000₽"
+	},
+	{
+		"pagetitle": "Лазерная эпиляция",
+		"anchor": "epilation",
+		"icon": "/assets/img/service-images/epilation.svg",
+		"image": "/assets/img/service-images/epilation.jpg",
+		"description": "Из­ба­вим от по­ре­зов от стан­ка и страш­ных вос­ко­вых по­ло­сок се­ан­сом ла­зе­рной эпи­ля­ции — уда­ле­ни­ем во­лос им­пуль­сами из­лу­че­ния.",
+		"minPrice": "5 000₽"
+	},
+	{
+		"pagetitle": "Лечение рубцов",
+		"anchor": "scars-healing",
+		"icon": "/assets/img/service-images/scars-healing.svg",
+		"image": "/assets/img/service-images/scars-healing.jpg",
+		"description": "Про­ве­дём комп­лекс про­це­дур кор­рек­ции, что­бы ак­ку­рат­но из­ба­вить от шра­мов, руб­цов и иных травм-де­фек­тов как ме­ха­ни­чес­ко­го, так и ме­ди­цин­ско­го ха­рак­те­ра.",
+		"minPrice": "5 000₽"
+	},
+	{
+		"pagetitle": "Инъекции ботулотоксина",
+		"anchor": "injections",
+		"icon": "/assets/img/service-images/injections.svg",
+		"image": "/assets/img/service-images/injections.jpg",
+		"description": "Скор­рек­ти­ру­ем воз­раст­ные из­ме­не­ния и ус­тра­ним асим­мет­рию ли­ца юве­лир­ным вве­де­нием бел­ка бо­ту­ло­ток­сина.",
+		"minPrice": "5 000₽"
+	},
+	{
+		"pagetitle": "Контурная пластика",
+		"anchor": "contour-plastic",
+		"icon": "/assets/img/service-images/contour-plastic.svg",
+		"image": "/assets/img/service-images/contour-plastic.jpg",
+		"description": "Вос­ста­но­вим эс­те­тич­ную сим­мет­рию и ус­тра­ним де­фек­ты кон­ту­ров с по­мощью ма­ло­ин­ва­зив­ной про­це­дуры инъек­ции ги­алу­ро­но­вой кис­лоты.",
+		"minPrice": "5 000₽"
+	},
+	{
+		"pagetitle": "Увеличение губ",
+		"anchor": "lips-enlargement",
+		"icon": "/assets/img/service-images/lips-enlargement.svg",
+		"image": "/assets/img/service-images/lips-enlargement.jpg",
+		"description": "Бе­зо­пас­ным ин­ъек­ци­он­ным ме­то­дом вос­становим фор­му и до­пол­ним объём пре­па­ра­том на ос­но­ве ги­алу­ро­но­вой кис­ло­ты.",
+		"minPrice": "5 000₽"
+	},
+	{
+		"pagetitle": "Нитевой лифтинг",
+		"anchor": "threading",
+		"icon": "/assets/img/service-images/lifting.svg",
+		"image": "/assets/img/service-images/lifting.jpg",
+		"description": "Под­тя­нем кон­ту­ры и за­пус­тим про­цес­сы ре­ге­не­ра­ции с по­мощью ма­ло­ин­ва­зив­ной про­це­ду­ры вве­де­ния са­мо­рас­са­сы­ва­ющ­их­ся ни­тей.",
+		"minPrice": "5 000₽"
+	},
+	{
+		"pagetitle": "Капельницы красоты",
+		"anchor": "beauty-drips",
+		"icon": "/assets/img/service-images/beauty-drips.svg",
+		"image": "/assets/img/service-images/beauty-drips.jpg",
+		"description": "Де­ли­кат­ный де­токс и омо­ло­же­ние с по­мощью ка­пель­ниц с по­лез­ней­шими кок­тей­ля­ми из ви­та­ми­нов, кис­лот и мик­ро­эле­мен­тов.",
+		"minPrice": "5 000₽"
+	}
+]

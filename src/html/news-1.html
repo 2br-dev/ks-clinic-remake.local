@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		@@include('./parts/head.html', {title: 'КС Клиник - главная', styles: 'news.css'})
+	</head>
+	<body>
+		@@include('./parts/header.html')
+		<main id="news">
+			<section>
+				<div class="container">
+					<div class="row">
+						<div class="col xl8 l7">
+							<img data-src="/assets/img/news/1.jpg" alt="" class="responsive-img lazy" />
+							<h1>Социальный проект: можем, хотим и делаем</h1>
+							<p>
+								За 18 лет работы мы выросли — в людях, знаниях, технике — и доросли до pro bono
+								проектов! Их мы не афишируем — это личная инициатива, желание. Какой-либо цели для
+								бизнеса они не несут, но, возможно, вернут во Вселенную кусочек той теплоты, что наши
+								пациенты ежедневно дарят нам.
+							</p>
+							<p>
+								Суть программы: мы стараемся помочь людям с серьёзными дефектами кожи вроде рубцов, у
+								которых по каким-либо причинам нём возможности обратиться в клинику.
+							</p>
+							<p>
+								Первым в программу попал вот этот симпатичный парень. Молодой, активный, вся жизнь
+								впереди! Но полученный в детстве ожог сильно его сковывал. Взялись за непростую
+								реабилитацию и, по секрету, первые результаты уже есть!
+							</p>
+							<p>
+								Обязательно поделимся финальным преображением, а пока держите кулачки: будем со всей
+								силы колдовать. Проследить за ходом работы можно
+								<a href="https://t.me/kc_clinic">тут</a>
+							</p>
+						</div>
+						<div class="col xl3 l4 offset-xl1 offset-l1">
+							<div class="row">@@loop('./parts/news-side-entry.html', './data/news.json')</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			@@include('./parts/contacts-block.html')
+		</main>
+		@@include('./parts/footer.html')
+		<script src="/assets/js/master.js"></script>
+	</body>
+</html>

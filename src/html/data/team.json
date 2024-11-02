@@ -1,0 +1,22 @@
+[
+	{
+		"name": "Светлана Королёва",
+		"rank": "Основатель компании, врач-косметолог, преподаватель",
+		"img": "/assets/img/team/koroleva.jpg"
+	},
+	{
+		"name": "Антонина Светлова",
+		"rank": "Врач-косметолог, ассистент",
+		"img": "/assets/img/team/svetlova.jpg"
+	},
+	{
+		"name": "Ирина Горшевникова",
+		"rank": "Врас-косметолог",
+		"img": "/assets/img/team/gorshevnikova.jpg"
+	},
+	{
+		"name": "Анна Круглова",
+		"rank": "Врач-косметолог",
+		"img": "/assets/img/team/kruglova.jpg"
+	}
+]

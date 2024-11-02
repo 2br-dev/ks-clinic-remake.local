@@ -1,0 +1,14 @@
+main#news .news-side-entry {
+    display: block;
+    margin-bottom: 45px;
+    color: #333;
+}
+
+main#news .news-side-entry img {
+    display: block;
+    margin-bottom: 12px;
+}
+
+main#news .news-side-entry small {
+    color: #989b7b;
+}

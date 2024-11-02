@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		@@include('./parts/head.html', {title: 'КС Клиник - RF-лифтинг', styles: 'service.css'})
+	</head>
+	<body>
+		@@include('./parts/header.html')
+		<main id="service">
+			<section id="description">
+				<div class="container">
+					<div class="row flex">
+						<div class="col xl3 l4 hide-l-down">
+							<div class="sidebar-wrapper">
+								<h3>Услуги</h3>
+								<ul class="service-navi">
+									@@loop('./parts/service-nav.html', './data/services.json')
+								</ul>
+							</div>
+						</div>
+						<div class="col xl8 offset-xl1 offset-l1 l7 offset-xl1 m12">
+							<div class="row">
+								<h1>RF-лифтинг</h1>
+								<div class="col s12">
+									<div class="img-wrapper">
+										<img
+											data-src="/assets/img/service-images/rf-large.jpg"
+											alt=""
+											class="lazy responsive-img"
+										/>
+									</div>
+								</div>
+								<div class="col xl6 l12 m6 s12">
+									<h2 class="small">На связи молодость кожи без операций!</h2>
+									<p>
+										Процедура RF-лифтинга - это неинвазивная и мягкая методика восстановления
+										упругости кожи с помощью радиоволн. Волны быстро и легко проникают в глубокие
+										слои под эпидермисом, разогревая глубинные ткани и выводя наружу излишки себума.
+									</p>
+									<p>RF-лифтинг в "КС Клиник" - это</p>
+									<ul class="browser-default">
+										<li>Омолаживающая процедура без хирургического вмешательства;</li>
+										<li>Мягкое и деликатное истончение возрастной жировой подслойки;</li>
+										<li>
+											Эффективный способ аккуратного расширения сосудов и восстановление здорового
+											кровотока;
+										</li>
+										<li>
+											Восстановление упругости и эластичности кожи, разглаживание растяжек и общая
+											подтянутость щечной и лобной зон;
+										</li>
+									</ul>
+								</div>
+								<div class="col xl6 l12 m6 s12">
+									<p>
+										Процедура RF-лифтинга показана всем, кто беспокоится о появившихся "брылях",
+										стершихся границах носогубной зоны и не готов прибегать к услугам пластической
+										хирургии. RF - эффективный метод, однако существует ряд противопоказаний.
+									</p>
+									<p>
+										Подробнее о том, подойдет ли RF-лифтинг конкретно вам, расскажет лично врач "КС
+										Клиник", а ниже представлены лишь наиболее частотные противопоказания:
+									</p>
+									<ul class="browser-default">
+										<li>Онкологические заболевания;</li>
+										<li>
+											Болезни - как острые, так и хронические в "спящем" режиме - иммунной
+											системы;
+										</li>
+										<li>Металлические протезы, силиконовые импланты;</li>
+										<li>Наличие установленного кардиостимулятора;</li>
+										<li>Сахарный диабет;</li>
+										<li>Инфекционные заболевания и обострение хронических заболеваний;</li>
+									</ul>
+									<p>О ваших индивидуальных показания - лично на приёме в "Кс Клиник"!</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			@@include('./parts/c2a-block.html') @@include('./parts/contacts-block.html')
+		</main>
+		@@include('./parts/footer.html')
+		<script src="/assets/js/master.js"></script>
+	</body>
+</html>

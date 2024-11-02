@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		@@include('./parts/head.html', {title: 'КС Клиник - Удаление сосудов', styles: 'service.css'})
+	</head>
+	<body>
+		@@include('./parts/header.html')
+		<main id="service">
+			<section id="description">
+				<div class="container">
+					<div class="row flex">
+						<div class="col xl3 l4 hide-l-down">
+							<div class="sidebar-wrapper">
+								<h3>Услуги</h3>
+								<ul class="service-navi">
+									@@loop('./parts/service-nav.html', './data/services.json')
+								</ul>
+							</div>
+						</div>
+						<div class="col xl8 offset-xl1 offset-l1 l7 offset-xl1 m12">
+							<div class="row">
+								<h1>Удаление сосудов</h1>
+								<div class="col s12">
+									<div class="img-wrapper">
+										<img
+											data-src="/assets/img/service-images/vessel-removal-large.jpg"
+											alt=""
+											class="lazy responsive-img"
+										/>
+									</div>
+								</div>
+								<div class="col">
+									<h2 class="small">Звезда в душе, а не на лице!</h2>
+								</div>
+								<div class="col xl6 l12 m6 s12">
+									<p>
+										Сосудистые "звёздочки", крупные красные пятна и мелкие подкожные дефекты - от
+										всего этого можно легко избавиться! В "КС Клиник" для этого мы предлагаем услугу
+										Удаления сосудов или Коагуляцию. Методики могут быть разными, но эффект один -
+										визуальная чистота, здоровый ровный тон кожи и улыбка при взгляде на своё
+										отражение!
+									</p>
+									<p>Методики удаление сосудов в "КС Клиник"</p>
+									<ul class="browser-default">
+										<li>
+											Лазер. Луч специального аппарата мягко въедается в поврежденные сосуды,
+											нагревает их и разрушает внутреннюю стенку, запаивая его.
+										</li>
+										<li>
+											Радиоволны. Волна деликатно воздействует на сосуды, запуская процессы
+											перераспределения крови. Повреждённый в итоги запаивается и полностью
+											исчезает.
+										</li>
+										<li>
+											Склеротерапия. Ювелирный метод введения в просвет сосуда специального
+											препарата, склеивающего повреждённый со здоровым, устраняя дефект.
+										</li>
+									</ul>
+								</div>
+								<div class="col xl6 l12 m6 s12">
+									<p>
+										Процедура Удаления сосудов отработана годами и помогла сотням пациентов, однако
+										у неё имеются противопоказания. Точную информацию о том, подойдёт ли вам лично
+										данная услуга, может сказать только врач, а мы ниже приведём примеры непреложных
+										запретов:
+									</p>
+									<ul class="browser-default">
+										<li>Аллергические реакции;</li>
+										<li>Онкологические заболевания</li>
+										<li>Сахарный диабет</li>
+										<li>Период беременности и лактации</li>
+										<li>Период гормональной терапии</li>
+									</ul>
+									<p>
+										Более подробный список и точечные рекомендации врача - лично на приёме в "КС
+										Клиник"!
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			@@include('./parts/c2a-block.html') @@include('./parts/contacts-block.html')
+		</main>
+		@@include('./parts/footer.html')
+		<script src="/assets/js/master.js"></script>
+	</body>
+</html>

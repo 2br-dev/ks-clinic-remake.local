@@ -1,0 +1,139 @@
+header {
+	z-index: 20;
+	position: sticky;
+	top: 0;
+
+	& .container {
+		padding: 20px 0;
+		position: relative;
+
+		&:after {
+			content: "";
+			display: block;
+			height: 1px;
+			background-image: linear-gradient(
+				to right,
+				rgba(black, 0),
+				rgba(black, 1),
+				rgba(black, 0)
+			);
+			position: absolute;
+			width: 100%;
+			left: 0;
+			bottom: 0;
+		}
+
+		& .row {
+			margin: 0;
+		}
+
+		& .logo-wrapper {
+			display: flex;
+			align-items: center;
+
+			& .logo-mobile {
+				width: 30px;
+			}
+
+			& .logo-desktop {
+				width: 220px;
+			}
+
+			& .sidenav-trigger {
+				margin-right: 10px;
+				font-size: clamp(24px, 2vw, 32px);
+				color: $text;
+			}
+		}
+
+		& nav {
+			& a {
+				color: $text;
+			}
+
+			& > ul {
+				margin: 0;
+				display: flex;
+
+				& > li {
+					position: relative;
+
+					& > a {
+						display: block;
+						line-height: 3em;
+						padding: 0 1em;
+
+						&:after {
+							content: "";
+							display: block;
+							width: calc(100% + 2em);
+							margin-left: -1em;
+							border: 2px solid $accent;
+							transform: scaleX(0);
+							transition: transform 0.2s;
+						}
+					}
+
+					& ul {
+						position: absolute;
+						z-index: 2;
+						transition: transform 0.2s, opacity 0.2s;
+						transform: translateY(-20px);
+						opacity: 0;
+						pointer-events: none;
+						display: grid;
+						grid-template-columns: repeat(3, 1fr);
+
+						& li {
+							background-color: $paper;
+
+							& a {
+								border: 1px solid #efefef;
+								display: block;
+								white-space: nowrap;
+								line-height: 3em;
+								padding: 0 1.5em;
+
+								&:hover {
+									background-color: rgba(black, 0.05);
+								}
+							}
+						}
+					}
+
+					&:hover {
+						& a:after {
+							transform: scaleX(1);
+						}
+
+						& ul {
+							transform: translateY(0);
+							opacity: 1;
+							pointer-events: all;
+						}
+					}
+				}
+			}
+		}
+
+		& aside {
+			text-align: right;
+			white-space: nowrap;
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+
+			& .mobile-hide {
+				@media (max-width: 450px) {
+					display: none;
+				}
+			}
+
+			& .phone {
+				margin-left: 10px;
+				color: $text;
+				font-size: 24px;
+			}
+		}
+	}
+}

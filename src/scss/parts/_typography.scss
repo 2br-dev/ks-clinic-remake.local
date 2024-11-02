@@ -1,0 +1,76 @@
+@import url(https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css);
+@import url(https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap);
+
+@font-face {
+	font-family: "Involve";
+	src: url("/assets/fonts/Involve-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Denistina";
+	src: url("/assets/fonts/DeniStina.ttf") format("truetype");
+}
+
+body {
+	font-family: "Involve", sans-serif;
+	font-size: clamp(16px, 2vw, 18px);
+
+	& p {
+		line-height: 1.6em;
+	}
+
+	& h1 {
+		font-weight: 400;
+		font-size: clamp(46px, 3vw, 82px);
+
+		& strong {
+			font-weight: 400;
+			text-transform: uppercase;
+		}
+
+		& span {
+			display: block;
+			font-family: "Great Vibes", serif;
+			font-size: clamp(32px, 3vw, 64px);
+		}
+	}
+
+	& h2 {
+		@extend h1;
+		font-size: clamp(36px, 3vw, 42px);
+
+		& span {
+			color: $accent;
+			font-size: clamp(36px, 3vw, 42px);
+		}
+	}
+
+	section {
+		counter-increment: headers;
+
+		&#hero {
+			counter-set: headers 0;
+		}
+	}
+
+	& h2 {
+		letter-spacing: clamp(0px, 0.5vw, 0.2em);
+
+		&:before {
+			letter-spacing: initial;
+			content: counter(headers, decimal-leading-zero);
+			display: block;
+			font-size: 14px;
+			margin-bottom: 20px;
+		}
+
+		& span {
+			letter-spacing: initial;
+		}
+	}
+
+	& h3 {
+		font-size: clamp(21px, 2vw, 27px);
+		font-weight: 400;
+	}
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		@@include('./parts/head.html', {title: 'КС Клиник - Контакты'})
+	</head>
+	<body>
+		@@include('./parts/header.html')
+		<main id="service">
+			<section id="contacts">
+				<div class="data-wrapper">
+					<div class="container">
+						<div class="row">
+							<div class="col xl4 l5 m12">
+								<img data-src="/assets/img/ks-contacts-logo.svg" alt="" class="responsive-img lazy" />
+								<h1>
+									<strong>Контакты</strong>
+								</h1>
+								<div class="kv-wrapper">
+									<div class="kv-pair">
+										<small class="key">телефон</small>
+										<a class="value" href="tel:+79184313050">+7 (918) 431-30-50</a>
+									</div>
+									<div class="kv-pair">
+										<small class="key">адрес</small>
+										<span class="value">Краснодар, ул. Дальняя 27, оф. 16</span>
+									</div>
+									<div class="kv-pair">
+										<small class="key">Время работы</small>
+										<span class="value">с 10-00 до 20-00</span>
+									</div>
+								</div>
+								<div class="contacts-action">
+									<a href="https://wa.me/+79615353510" class="bttn-outline">Записаться на приём</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="map-wrapper">
+					<div class="row flex">
+						<div class="col l7 offset-l5 map-container">
+							<div class="map-wrapper">
+								<div id="map"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('./parts/footer.html')
+		<script src="/assets/js/master.js"></script>
+	</body>
+</html>

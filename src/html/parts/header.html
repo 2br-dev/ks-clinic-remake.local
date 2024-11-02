@@ -1,0 +1,66 @@
+<header>
+	<div class="container">
+		<div class="row flex vcenter">
+			<div class="col l2 m4 s4 xs5 t4">
+				<div class="logo-wrapper">
+					<a href="#mobile-nav" class="sidenav-trigger hide-l-up">
+						<i class="bx bx-menu"></i>
+					</a>
+					<a href="/">
+						<img
+							src="/assets/img/logo-black.svg"
+							alt="На главную"
+							class="responsive-img logo-desktop hide-xs-down"
+						/>
+						<img
+							src="/assets/img/logo-black-compact.svg"
+							alt="На главную"
+							class="responsive-img logo-mobile hide-xs-up"
+						/>
+					</a>
+				</div>
+			</div>
+			<div class="col xl6 offset-xl1 l6 hide-l-down">
+				<nav>
+					<ul>
+						<li><a href="/about.html">О клинике</a></li>
+						<li>
+							<a>Услуги</a>
+							<ul>
+								@@loop('./service-nav.html', './data/services.json')
+							</ul>
+						</li>
+						<li><a href="/news.html">Новости</a></li>
+						<li><a href="/price.html">Цены</a></li>
+						<li><a href="/contacts.html">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="col xl3 l4 m8 s8 xs7 t8">
+				<aside>
+					<a href="https://wa.me/+79615353510" class="bttn-outline" target="_blank">
+						Записаться<span class="mobile-hide"> на приём</span>
+					</a>
+					<a href="tel:79184313050" class="phone">
+						<i class="bx bxs-phone bx-flip-horizontal"></i>
+					</a>
+				</aside>
+			</div>
+		</div>
+	</div>
+</header>
+<nav class="sidenav" id="mobile-nav">
+	<ul>
+		<li><a href="/">Главная</a></li>
+		<li><a href="/about.html">О клинике</a></li>
+		<li>
+			<a>Услуги</a>
+			<ul>
+				@@loop('./service-nav.html', './data/services.json')
+			</ul>
+		</li>
+		<li><a href="/news.html">Новости</a></li>
+		<li><a href="/price.html">Цены</a></li>
+		<li><a href="/contacts.html">Контакты</a></li>
+	</ul>
+</nav>
